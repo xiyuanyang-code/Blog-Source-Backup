@@ -405,10 +405,12 @@ After entering university, the author realized that the new knowledge to be lear
 	- **挑战杯**：完成阶段汇报（联通APP调研及其他工作）
 	- 恢复博客更新
 	- 完成学期总结
+
 - `2025/07/03`:
   - 回上海啦
   - **量化金融**：开始看stock_data代码 & 基本pipeline跑通
   - 学习Tensorboard & pipe in Python， 完成博客写作
+
 - `2025/07/04`:
   - **挑战杯**：对齐后续工作 & 开始数据采集阶段
   - **量化金融**：完成汇报PPT（结束因子挖掘第一部分的工作） & 跑通pipeline实验（alphagen的LLM和RL的实验）
@@ -420,5 +422,13 @@ After entering university, the author realized that the new knowledge to be lear
 	- **人工智能**：规划后续强化学习的学习RoadMap
 	- 修改简历 & 完善Github上几个与个人简历有关的Paper，增加简历修改的自动化流程
 	- 配置uv，vllm等基本环境
+
+- `2025/07/06` ~ `2025/07/10`:
+  - **挑战杯**：完成数据标注任务 & UI组件设计（初入安卓开发）
+  - **量化金融**：完成代码重构
+  - **RL**：学习强化学习基本知识
+  - **软件开发**：完善相关Github代码库（Code Counter & 命令行快速调用开发工具）
+  - **工作流**：完善博客写作工作流 & 换主流IDE为cursor
+
 
 </div>

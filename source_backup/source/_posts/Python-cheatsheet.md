@@ -43,6 +43,7 @@ If the implementation is hard to explain, it's a bad idea.<br>
 If the implementation is easy to explain, it may be a good idea.<br>
 Namespaces are one honking great idea -- let's do more of those!<br>
 </div>
+
 ## Announcement
 
 [详情请点这里](https://xiyuanyang-code.github.io/posts/Python-tutorial/)
@@ -129,8 +130,8 @@ Namespaces are one honking great idea -- let's do more of those!<br>
 
 4. **字节数组（`bytearray`）**：
    ```python
-   ba = bytearray(b"hello")
-   ba[0] = 72  # 直接修改原字节数组
+   test = bytearray(b"hello")
+   test[0] = 72  # 直接修改原字节数组
    ```
 
 5. **自定义类的对象**：

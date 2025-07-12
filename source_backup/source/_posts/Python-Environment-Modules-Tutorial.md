@@ -142,7 +142,7 @@ for root, dirs, files in os.walk('.'):
 In [ ]:
 
 ```python
-# path joining: it will automatically combine the two adddress together.
+# path joining: it will automatically combine the two address together.
 path_1 = "/GPFS/rhome/xiyuanyang/python_basic/"
 path_2 = "Python-environment-modules-tutorial/helloworld.txt"
 new_path = os.path.join(path_1, path_2)

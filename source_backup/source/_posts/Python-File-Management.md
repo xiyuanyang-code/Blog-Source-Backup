@@ -24,9 +24,9 @@ It is the learning lecture notes of Python tutorial (from scratch).
 
 ## Import Modules
 
-在Python中，**模块（Module）**是一个包含Python代码的文件，通常以 `.py` 为扩展名。模块可以包含函数、类、变量和可执行代码。
+在Python中，**模块**是一个包含Python代码的文件，通常以 `.py` 为扩展名。模块可以包含函数、类、变量和可执行代码。
 
-### Basic Grammer
+### Basic Grammar
 
 导入模块最常用的命令是`import`命令，我们可以使用`import`命令导入**Python中的第三方模块**。（类似于C++中的`#include`命令）
 
@@ -399,10 +399,10 @@ contents_correct = correct_path.read_text()
 try:
     contents_wrong = wrong_path.read_text()
 except FileNotFoundError:
-    print("Haha,File not found!")
+    print("HaHa, File not found!")
 ```
 
-再次运行程序，就不会出现`traceback`报错，而只会输出：`Haha,File not found!`
+再次运行程序，就不会出现`traceback`报错，而只会输出：`HaHa,File not found!`
 
 ## Data Storage：`JSON`
 

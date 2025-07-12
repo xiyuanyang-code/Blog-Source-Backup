@@ -7,6 +7,7 @@ categories:
   - Code
   - Architecture Design
 tags:
+  - finished
   - Tutorial
   - Architecture Patterns
   - Python

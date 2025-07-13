@@ -165,7 +165,7 @@ def text_splitter(docs):
     return splits
 
 def embedding(splits):
-    '''Embeding the vector'''
+    '''Embedding the vector'''
     vectorstore = Chroma.from_documents(documents=splits, 
                                         embedding=OpenAIEmbeddings(
                                             base_url="https://api.zhizengzeng.com/v1",

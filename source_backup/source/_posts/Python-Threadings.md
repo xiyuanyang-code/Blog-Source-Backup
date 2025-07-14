@@ -19,6 +19,7 @@ tags:
     font-family: Georgia, sans, serif;
   }
 </style>
+
 # Threads and Processes in Python
 
 {% note primary %}

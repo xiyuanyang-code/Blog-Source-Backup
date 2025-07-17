@@ -1,5 +1,5 @@
 ---
-title: Python Pipe
+title: "Python Pipe & Functional Programming"
 date: 2025-07-03 16:32:43
 index_img: /img/cover/tuxwelcome.png
 excerpt: The basic tutorial of using pipes in Python programming, including advanced usage. The blog also introduces the introduction of functional programming.
@@ -299,6 +299,9 @@ from pipe import Pipe
 square = Pipe(lambda iterable: (x ** 2 for x in iterable))
 ```
 
-# Introduction to functional programming
+# Introduction to Functional Programming
 
-to be done in the future.
+接下来，我们介绍**函数式编程**（Functional Programming）
+
+
+

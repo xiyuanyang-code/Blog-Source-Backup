@@ -430,5 +430,10 @@ After entering university, the author realized that the new knowledge to be lear
   - **软件开发**：完善相关Github代码库（Code Counter & 命令行快速调用开发工具）
   - **工作流**：完善博客写作工作流 & 换主流IDE为cursor
 
+- `2025/07/11` ~ `2025/07/15`:
+  - **挑战杯**：完成appium的调研，将UI组件设计写入主仓库
+  - **量化金融**：完成数据对齐和代码重构的全部工作 & 加上PCA的模块 & 开始跑实验
+  - **软件开发**：学习Python设计模式
+  - **SAI-Community**：完成相关博客的更新推送
 
 </div>

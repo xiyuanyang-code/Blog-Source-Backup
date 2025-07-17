@@ -253,14 +253,14 @@ If you can see some outputs like the contents shown below (my contents):
 /home/xiyuanyang/.local/share/fonts/songti.ttc: Songti SC,宋體\-簡,宋体\-简:style=Bold,粗體,粗体
 /home/xiyuanyang/.local/share/fonts/songti.ttc: Songti TC,宋體\-繁,宋体\-繁:style=Light,細體,细体
 /home/xiyuanyang/.local/share/fonts/songti.ttc: Songti SC,宋體\-簡,宋体\-简:style=Light,細體,细体
-/home/xiyuanyang/.local/share/fonts/georgia.ttf: Georgia:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta
+/home/xiyuanyang/.local/share/fonts/georgia.ttf: Georgia:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta
 ```
 
 If you can see some files names `songti.ttc` and `georgia.ttf`, then means that you have installed these fonts successfully!
 
-### Not successfully? (Skip optinally)
+### Not successfully? (Skip Optional)
 
-Then **you need to install fonts munually**. You can google it for getting fonts packages like `songti.ttc`.
+Then **you need to install fonts manually**. You can google it for getting fonts packages like `songti.ttc`.
 
 In [ ]:
 

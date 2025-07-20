@@ -13,6 +13,12 @@ tags:
   - Python
 ---
 
+<style>
+  html, body, .markdown-body {
+    font-family: Georgia, sans, serif;
+  }
+</style>
+
 # Functional Programming
 
 ## Coding Style
@@ -203,7 +209,7 @@ print(func.__doc__)
 
 - Functions can be nested in another function!
 
-- Function Factory in Design Pattern
+- **Function Factory in Design Pattern**: a function that generate a function.
 
 - It should satisfy:
 
@@ -233,3 +239,120 @@ print(result)
 
 > 当然 ，lambda匿名函数也可以，the return value is the value of single expression.
 
+#### `map` & `filter` & `reduce`
+
+The same as `pipe` and `js`!
+
+##### map
+
+`map(function, iterable)`: It is equivalent to for x in iterable: f(x), but returning a map.
+
+- Return an **iterator** that applies functions to every item of this iterable, yielding the result.
+
+```python
+def test_function(a):
+    return a + a
+
+numbers = list(range(10))
+
+result = list(map(test_function, numbers))
+print(result)
+```
+
+A map is an iterator which can be iterated, which is different from a list.
+
+```python
+# the usage of map as an iterator
+
+result_2 = map(test_function, numbers)
+
+print(result_2.__iter__() == result_2)
+try:
+    for i in range(11):
+        print(f"Value is {result_2.__next__()}")
+except StopIteration:
+    print("The iteration has stopped")
+```
+
+##### `filter`
+
+`filter(function, iterable)`: select the element `x` where `function(x)` is True.
+
+Construct an **iterator** from those elements of iterable for which function returns true. iterable may be either a sequence, a container which supports iteration, or an iterator. If function is None, the identity function is assumed, that is, all elements of iterable that are false are removed.
+
+```python
+def is_happy(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+
+result_3 = filter(is_happy, range(1, 11))
+print(list(result_3))
+
+result_3 = filter(is_happy, range(1, 11))
+try:
+    for i in range(11):
+        print(f"Value is {result_3.__next__()}")
+except StopIteration:
+    print("Stop Iteration")
+```
+
+##### `Reduce`
+
+- The `reduce(fun, iterable)` function is used to apply a particular function passed in its argument to **all of the list elements mentioned in the sequence passed along**.
+
+- This function is defined in `functools` module
+
+- The same in JavaScripts.
+
+params: `reduce(function, iterable, initial)`:
+
+- If `initial` is given as $x_{\text{ini}}$:
+
+    - $y_0 = f(x_{\text{ini}}, x_0)$, where $x_0$ is the first value in the iterable object.
+
+    - $y_1 = f(y_0, x_1), y_2 = f(y_1, x_2), \dots , y_{n-1} = f(y_{n-2}, x_{n-1})$, **the iteration**!
+
+    - The return value is $y_{n-1}$.
+
+- If `initial` is not given:
+
+    - $y_0 = f(x_0, x_1), y_1 = f(y_0, x_2), \dots , y_{n-2} = f(y_{n-3}, x_{n-1})$.
+
+    - The return value is $y_{n-2}$.
+
+```python
+from functools import reduce
+
+
+def my_add(a, b):
+    print(f"Value: {a} + {b} = {a + b}")
+    return a + b
+
+ini_list = list(range(30, 50))
+result = reduce(my_add, ini_list, 0)
+print(result)
+
+# Value: 0 + 30 = 30
+# Value: 30 + 31 = 61
+# Value: 61 + 32 = 93
+# Value: 93 + 33 = 126
+# Value: 126 + 34 = 160
+# Value: 160 + 35 = 195
+# Value: 195 + 36 = 231
+# Value: 231 + 37 = 268
+# Value: 268 + 38 = 306
+# Value: 306 + 39 = 345
+# Value: 345 + 40 = 385
+# Value: 385 + 41 = 426
+# Value: 426 + 42 = 468
+# Value: 468 + 43 = 511
+# Value: 511 + 44 = 555
+# Value: 555 + 45 = 600
+# Value: 600 + 46 = 646
+# Value: 646 + 47 = 693
+# Value: 693 + 48 = 741
+# Value: 741 + 49 = 790
+# 790
+```

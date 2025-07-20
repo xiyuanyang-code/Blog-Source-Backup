@@ -17,6 +17,8 @@ tags:
     font-family: Georgia, sans, serif;
   }
 </style>
+
+
 # Python Advanced Programming
 
 ## Introduction
@@ -974,5 +976,60 @@ print(set(lst_3))
 
     - 程序中的不同部分不会共享和修改同一个可变状态。这使得代码更模块化，减少了并发编程中的复杂性。
 
+See more in [Functional Programming](https://xiyuanyang-code.github.io/posts/Pythonic-Functional-Programming/)
 
-Let's discuss it in the future!
+## LEGB
+
+**LEGB** is an acronym that stands for:
+
+* **L** - **Local**: The innermost scope, where names defined inside the *current function* are found. Variables created within a function (not declared `global` or `nonlocal`) live here.
+
+* **E** - **Enclosing (Nonlocal)**: The scope of any *outer functions* that wrap the current function. If you have nested functions, names in the immediate parent function's scope are considered "enclosing."
+
+* **G** - **Global**: The module-level scope. Names defined outside of any function at the top level of a Python file (script) are global.
+
+* **B** - **Built-in**: The broadest scope, containing names pre-defined in Python, like `print()`, `len()`, `True`, `False`, `None`, `list()`, etc.
+
+
+When Python tries to find the definition of a name (like a variable, function, or class) in your code, it follows this specific order:
+
+1.  **First, it looks in the `Local` scope.** If it finds the name there, it uses it.
+2.  **If not found locally, it moves to the `Enclosing` scope(s).** It searches outwards through any nested functions.
+3.  **If still not found, it checks the `Global` scope.**
+4.  **Finally, if the name isn't found anywhere else, it checks the `Built-in` scope.**
+
+If the name is not found in any of these four scopes, Python raises a `NameError`.
+
+```python
+def outer():
+    x = "hello"
+    y = "welcome"
+    print(f"x is {x}")
+    print(f"y is {y}")
+
+    def inner():
+        nonlocal y
+        y = "welcome to the inner"
+        print(f"x is {x}")
+        print(f"y is {y}")
+    
+    inner()
+    print(f"x is {x}")
+    print(f"y is {y}")
+
+outer()
+
+# x is hello
+# y is welcome
+# x is hello
+# y is welcome to the inner
+# x is hello
+# y is welcome to the inner
+```
+
+variable `x` and `y` is local to `outer()` but **enclosing** to `inner()`.
+
+![LEGB Rules](https://s1.imagehub.cc/images/2025/07/20/e25bfa11a56fbdb2d2b03b2376fa5e5e.png)
+
+The `nonlocal` keyword is used to work with variables inside nested functions, where the variable should not belong to the inner function.
+

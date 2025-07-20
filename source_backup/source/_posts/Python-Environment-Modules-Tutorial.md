@@ -16,7 +16,7 @@ tags:
 
 # `os` tutorial for python
 
-In [ ]:
+
 
 ```python
 import os
@@ -26,14 +26,14 @@ import os
 
 ## Use `os` module to query relevant file information.
 
-In [ ]:
+
 
 ```python
 print(os.name)
 # will return posix (Portable Operating System Interface) for unix-like system like macos and linux 
 ```
 
-In [ ]:
+
 
 ```python
 print(type(os.environ))
@@ -42,7 +42,7 @@ print(type(os.environ))
 print(os.environ)
 ```
 
-In [ ]:
+
 
 ```python
 os.chdir("/GPFS/rhome/xiyuanyang/python_basic/Python-environment-modules-tutorial")
@@ -68,7 +68,7 @@ You can use the `os` library to perform basic file operations, including deletin
 - `os.rename()`: rename the directory.
 - `open(file_name, 'a').close()` can be used to create a new file.
 
-In [ ]:
+
 
 ```python
 os.chdir("/GPFS/rhome/xiyuanyang/python_basic/Python-environment-modules-tutorial")
@@ -102,7 +102,7 @@ os.rename(src="2.txt", dst="1.txt")
 
 Well, actually if you are familiar with bash commands, there is no need for you to learn these again!
 
-In [ ]:
+
 
 ```python
 os.system("echo 1")
@@ -120,13 +120,13 @@ Very important! Most frequently used!
 
 If you want to walk through all the files and directories in a certain directory, you can use `os.walk()` to traverse.
 
-In [ ]:
+
 
 ```python
 help(os.walk)
 ```
 
-In [ ]:
+
 
 ```python
 # Traverse current directory and subdirectories
@@ -139,7 +139,7 @@ for root, dirs, files in os.walk('.'):
 
 ### `os.path`
 
-In [ ]:
+
 
 ```python
 # path joining: it will automatically combine the two address together.
@@ -167,7 +167,7 @@ print(os.path.dirname(new_path))
 
 Now, you can combine `os.walk()` and `os.path()` together to implement a small `grep` command!
 
-In [ ]:
+
 
 ```python
 # Find files with specific extension
@@ -189,4 +189,31 @@ find_files('.ipynb', '.')
 
 ## `sys`
 
+Just see the PPT for several usage!
+
+For me only, I often use `sys.path.append()` command to add CWD path for python scripts.
+
+![sys module](https://s1.imagehub.cc/images/2025/07/20/651c5fca170aadae2cf97d83f00170a1.png)
+
+See [official tutorial](https://docs.python.org/3/library/sys.html) for more information!
+
+> It will replace several commands which can be done in the command line environment.
+
 ## File Management
+
+### Basic Usage
+
+- We will use `with open(file, mode, ...) as file` for the command. 
+
+- `Tab` is to be noticed.
+
+![Mode tutorial](https://s1.imagehub.cc/images/2025/07/20/758ff4a8776c6eda15751a0fe84daebb.png)
+
+For the encoding part: `encoding = 'utf-8'`.
+
+```python
+with open("test.txt", "w") as file:
+    file.write("Hello world")
+    file.close()
+```
+

@@ -436,4 +436,12 @@ After entering university, the author realized that the new knowledge to be lear
   - **软件开发**：学习Python设计模式
   - **SAI-Community**：完成相关博客的更新推送
 
+- `2025/07/16` ~ `2025/07/21`:
+
+  - **挑战杯**：尝试API-based的GUI组件
+  - **量化金融**：完成实验模块 & 完成大部分的文章论文写作，整体进入最后收尾阶段
+  - **Pythonic**：完成Pythonic的学习 & 函数式编程的学习 （SJTU计算导论完成学习 & 博客写作的全过程）
+  - **开发**：完成Quick-GPT的开发 & 正在进行 Quick-Planning 的开发
+  - **后续规划**：继续学习 Deep Reinforcement Learning & Attention is all you need!
+
 </div>

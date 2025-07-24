@@ -299,9 +299,4 @@ from pipe import Pipe
 square = Pipe(lambda iterable: (x ** 2 for x in iterable))
 ```
 
-# Introduction to Functional Programming
-
-接下来，我们介绍**函数式编程**（Functional Programming）
-
-
 

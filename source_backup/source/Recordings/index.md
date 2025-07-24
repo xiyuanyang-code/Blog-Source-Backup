@@ -444,4 +444,9 @@ After entering university, the author realized that the new knowledge to be lear
   - **开发**：完成Quick-GPT的开发 & 正在进行 Quick-Planning 的开发
   - **后续规划**：继续学习 Deep Reinforcement Learning & Attention is all you need!
 
+- `2025/07/22` ~ `2025/07/23`:
+  - **挑战杯**：完成API-based的任务 & 成功将代码merge进主分支。
+  - **量化金融**：完成最后论文部分的写作 & 审稿
+  - **开发**：开发小组件：飞书自动化GPU监控机器人的代码重构
+
 </div>

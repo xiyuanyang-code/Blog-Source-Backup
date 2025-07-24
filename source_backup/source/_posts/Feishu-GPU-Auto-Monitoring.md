@@ -11,6 +11,12 @@ tags:
   - Finished
 ---
 
+<style>
+  html, body, .markdown-body {
+    font-family: Georgia, sans, serif;
+  }
+</style>
+
 # Feishu GPU Auto Monitoring
 
 {% note primary %}
@@ -36,8 +42,11 @@ This project provides a simple way to monitor GPU usage on remote servers and re
 -   Create a `config.yaml` file in the root directory.
 -   Add the server details, user credentials, and Feishu bot information. See the example below for the required structure.
 
-> [!TIP]
-> You need to get **Feishu Webhook URL**, see [this blog](https://open.feishu.cn/community/articles/7271149634339422210) for more info.
+
+{% note warning %}
+You need to get **Feishu Webhook URL**, see [this blog](https://open.feishu.cn/community/articles/7271149634339422210) for more info.
+
+{% endnote %}
 
 Create a `config.yaml` file with the following structure:
 

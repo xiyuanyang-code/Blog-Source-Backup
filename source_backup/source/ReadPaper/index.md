@@ -16,8 +16,8 @@ date: 2025-07-25 12:50:48
 
 - `2025/07`:
 
-    - `2025/07/25`:
+    - `2025/07/26`:
 
-        - todo
+        - Learning technical blog written by Lilian Weng, [Why we think](https://lilianweng.github.io/posts/2025-05-01-thinking/), forthe first section. (It is too long...)
 
 </div>

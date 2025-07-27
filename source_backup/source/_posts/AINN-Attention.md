@@ -4,7 +4,6 @@ date: 2025-04-29 19:55:46
 index_img: /img/cover/attention.jpg
 excerpt: The introduction and explanation for the Basic Neural Network Transformer.
 math: true
-sticky: 1000
 categories:
   - Artificial Intelligence
   - AINN

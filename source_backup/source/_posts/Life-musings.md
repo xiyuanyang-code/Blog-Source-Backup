@@ -185,3 +185,44 @@ JavaScript完美收官
 Factor Mining 项目进入最后的收官环节，4000+行Python...
 
 ![Git 协作现状](https://s1.imagehub.cc/images/2025/07/16/bb7e8a54b1851392f52fb5e6227c1aaf.png)
+
+## 2025.7.25
+
+AlphaBuild has been finished! 😍😍😍
+期待一手后续的量化项目。
+
+## 2025.7.27
+
+最近在看 [PEP8](https://peps.python.org/pep-0008/) 的文档，看到了这样的一句话：
+
+{% note primary %}
+
+A Foolish Consistency is the Hobgoblin of Little Minds.
+
+by Ralph Waldo Emerson, Self-Reliance: An Excerpt from Collected Essays, First Series
+
+{% endnote %}
+
+简直说的太对了。
+
+{% note info %}
+
+One of Guido’s key insights is that code is read much more often than it is written. The guidelines provided here are intended to **improve the readability of code** and make it consistent across the wide spectrum of Python code. As PEP 20 says, “Readability counts”.
+
+A style guide is about **consistency**. Consistency with this style guide is important. Consistency within a project is more important. Consistency within one module or function is the most important.
+
+> but not foolish consistency.
+
+However, **know when to be inconsistent** – sometimes style guide recommendations just aren’t applicable. When in doubt, use your best judgment. Look at other examples and decide what looks best. And don’t hesitate to ask!
+
+In particular: do not break backwards compatibility just to comply with this PEP!
+
+Some other good reasons to ignore a particular guideline:
+
+- When applying the guideline would make the code less readable, even for someone who is used to reading code that follows this PEP.
+- To be consistent with surrounding code that also breaks it (maybe for historic reasons) – although this is also an opportunity to clean up someone else’s mess (in true XP style).
+- Because the code in question predates the introduction of the guideline and there is no other reason to be modifying that code.
+- When the code needs to remain compatible with older versions of Python that don’t support the feature recommended by the style guide.
+
+{% endnote %}
+

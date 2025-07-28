@@ -226,3 +226,13 @@ Some other good reasons to ignore a particular guideline:
 
 {% endnote %}
 
+## 2025.7.28
+
+Link: [Thank God](https://arxiv.org/pdf/2002.05202)
+
+{% note primary %}
+
+We offer no explanation as to why these architectures seem to work; we attribute their success, as all else, to divine benevolence.
+
+{% endnote %}
+

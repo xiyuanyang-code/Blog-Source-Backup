@@ -94,13 +94,15 @@ All the code will be refactored and categorized into [LLM Learn](https://github.
 
 - Basic architecture for Large Language Models
 
-    - Attention Mechanism (Attention is all you need!)
+    - Attention Mechanism (Attention is all you need!) ✅
 
-    - RNN, LSTM, GRU
+    - RNN, LSTM, GRU (will be covered in the future)
 
-    - Seq2Seq Model
+    - Seq2Seq Model ✅
 
-    - Transformer Architecture
+    - Transformer Architecture ✅
+
+    - Other basic NLP knowledge (word embeddings, etc.)
 
 - Pre Training for LLM
 
@@ -154,3 +156,15 @@ All the code will be refactored and categorized into [LLM Learn](https://github.
 
     - LangChain Community
 
+## Updating Status
+
+- `2025/07/28`: Finish two long-standing blog posts: `AINN-Attention` & `AINN-Transformer`
+
+    - Finish tutorial for basic Attention mechanism and Transformer Structure.
+
+
+## Current Todo List
+
+- Finish the implementation code of Transformer Module in dl2ai.
+
+- Learning courses: Word Embedding and basic NLP knowledge.

@@ -90,15 +90,18 @@ $$M \in \mathbb{R}^{n \times d} \to \text{Sequence transduction models} \to N \i
 
 #### Encoder
 
-编码器的重点在于处理**长度可变的输入序列**并将其**转化为形状固定的上下文变量** $\mathbf{c}$。在时间步 $t$，输入序列的第 $x_t$ 被输入进去，循环神经网络会施加循环层 $\mathbf{h}_t = f(x_t, \mathbf{h}_{t-1})$，得到对隐状态的更新，最终编码器会选定函数 $q$ 来实现对完整序列状态的编码：
+编码器的重点在于处理**长度可变的输入序列**并将其**转化为形状固定的上下文变量** $c$。在时间步 $t$，输入序列的第 $x_t$ 被输入进去，循环神经网络会施加循环层 $h_t = f(x_t, h_{t-1})$，得到对隐状态的更新，最终编码器会选定函数 $q$ 来实现对完整序列状态的编码：
 
-$$\mathbf{c} = q(\mathbf{h}_1, \mathbf{h}_2, \dots, \mathbf{h}_n)$$
+<!-- $$\mathbf{c} = q(\mathbf{h}_1, \mathbf{h}_2, \dots, \mathbf{h}_n)$$ -->
+
+$$c = q(h_1, h_2, \dots, h_n)$$
 
 #### Decoder
 
 解码器同样也是**循环神经网络**的状态设计，考虑时间步长为 $t^{\prime}$（为了和 $t$ 做区分），隐状态更新的公式如下：
 
-$$\mathbf{s}\_{t^{\prime}} = g(y_{t^{\prime} - 1}, \mathbf{c}, \mathbf{s}_{t^{\prime} - 1})$$
+$$s_{t^{\prime}} = g(y_{t^{\prime} - 1}, c, s_{t^{\prime} - 1})$$
+
 
 之后再利用输出层的 softmax 操作获得最终的概率分布：
 
@@ -193,7 +196,67 @@ Decoder 的设置相对更加复杂，对于一个堆叠块内部：首先需要
 
 ### Normalization
 
-todo in the future.
+在传统的神经网络中，归一化是非常关键的一步，这会为后续训练中的优化算法提供便利，防止出现梯度消失或者梯度爆炸的现象，提升稳定性。对于 Transformer 块，传入和传出的矩阵的维度为 $(\text{batches}, \text{sequence length}, \text{dimension})$。形式化地说，考虑输入 $X \in \mathbb{R}^{N \times L \times D}$:
+
+- $N$ is the number of batches
+
+- $L$ is the number of sequence length
+
+- $D$ is the number of dimension
+
+$$\forall x_{(n,l,d)} \in X, \ y_{(n,l,d)} = \gamma(\frac{x_{(n,l,d)} - \mu}{\sqrt{\sigma^2 + \epsilon}}) + \beta$$
+
+- $x_{(n,l,d)}$ 是输入张量 $X$ 在批次 $n$、序列位置 $l$、维度 $d$ 上的原始值。
+
+- $μ$ 是上下文相关的均值（context-dependent mean）。它的计算方式取决于我们选择在**哪个维度或哪些维度上**进行归一化。
+
+- $σ^2$ 是上下文相关的方差（context-dependent variance）。它的计算方式与 $μ$ 类似，也取决于归一化的维度选择。
+
+- $ϵ$ 是一个很小的正数，用于防止除以零，增加数值稳定性。
+
+- $γ$ 是缩放因子（learnable scaling parameter）。它是一个可学习的参数，用于调整归一化后的数据的尺度。
+
+- $β$ 是平移因子（learnable shifting parameter）。它是一个可学习的参数，用于调整归一化后的数据的偏移。
+
+{% note primary %}
+
+两个可学习的参数在比较简化的归一化中会被省略，即不带可学习参数的**简单归一化版本**（这一个版本也不考虑 $\epsilon$）：
+$$\forall x_{(n,l,d)} \in X, \ y_{(n,l,d)} = \frac{x_{(n,l,d)} - \mu}{\sigma}$$
+
+{% endnote %}
+
+归一化的选择关键在于如何计算一个高阶张量的**均值**和**标准差**。
+
+#### Batch Normalization
+
+在批量归一化中，我们沿着 **批次 ($N$)** 和 **序列长度 ($L$)** 维度计算统计量，对每个 **特征维度 ($D$)** 进行归一化。
+这意味着 $\mu$ 和 $\sigma^2$ 是针对每个特征维度 $d$ 计算的。
+
+* **均值 $\mu_d$：**
+    $$\mu_d = \frac{1}{N \cdot L} \sum_{n=1}^N \sum_{l=1}^L x_{n,l,d}$$
+* **方差 $\sigma_d^2$：**
+    $$\sigma_d^2 = \frac{1}{N \cdot L} \sum_{n=1}^N \sum_{l=1}^L (x_{n,l,d} - \mu_d)^2$$
+* **缩放因子和平移因子：** $\gamma$ 和 $\beta$ 也是针对每个特征维度 $d$ 独立的，即 $\gamma_d, \beta_d \in \mathbb{R}^{D}$。
+    因此，对于每个 $x_{n,l,d}$：
+    $$y_{n,l,d} = \gamma_d \left( \frac{x_{n,l,d} - \mu_d}{\sqrt{\sigma_d^2 + \epsilon}} \right) + \beta_d$$
+
+BN 旨在解决“**内部协变量漂移** (Internal Covariate Shift)”问题，即每个特征的分布在训练过程中不断变化。为了稳定这些分布，BN 必须知道哪些值属于同一个特征。这个“同一个特征”就是由 dimension 轴定义的。如果没有 dimension 的概念，BN 就无法区分哪些值应该一起被归一化以代表同一个特征的分布。它需要每个维度上的统计量来调整该维度上的所有数据点。
+
+#### Layer Normalization
+
+在层归一化中，我们沿着 **特征维度 ($D$)** 计算统计量，对每个 **样本 ($N$)** 和 **序列位置 ($L$)** 进行归一化。
+这意味着 $\mu$ 和 $\sigma^2$ 是针对每个样本 $n$ 和每个序列位置 $l$ 计算的。
+
+* **均值 $\mu_{n,l}$：**
+    $$\mu_{n,l} = \frac{1}{D} \sum_{d=1}^D x_{n,l,d}$$
+* **方差 $\sigma_{n,l}^2$：**
+    $$\sigma_{n,l}^2 = \frac{1}{D} \sum_{d=1}^D (x_{n,l,d} - \mu_{n,l})^2$$
+* **缩放因子和平移因子：** $\gamma$ 和 $\beta$ 在所有样本和序列位置上共享，但通常也是与特征维度 $D$ 相同长度的向量，即 $\gamma, \beta \in \mathbb{R}^{D}$。
+    因此，对于每个 $x_{n,l,d}$：
+    $$y_{n,l,d} = \gamma_d \left( \frac{x_{n,l,d} - \mu_{n,l}}{\sqrt{\sigma_{n,l}^2 + \epsilon}} \right) + \beta_d$$
+
+> 在 Transformer 等序列建模模型中，因为序列长度 $N$ 可变（并且是频繁变化），因此为了提升模型的鲁棒性，往往采用 **Layer Normalization** 的方式实现归一化。
+
 
 ## Complexity: Why Self-Attention
 
@@ -241,3 +304,7 @@ todo in the future.
 In Table 3 rows (B), we observe that **reducing the attention key size dk hurts model quality**. This suggests that determining compatibility is not easy and that a more sophisticated compatibility function than dot product may be beneficial. We further observe in rows (C) and (D) that, as expected, **bigger models are better**, and **dropout is very helpful in avoiding over-fitting**. In row (E) we replace our sinusoidal positional encoding with learned positional embeddings, and observe nearly identical results to the base model.
 
 {% endnote %}
+
+## Conclusion
+
+Attention is all you need!

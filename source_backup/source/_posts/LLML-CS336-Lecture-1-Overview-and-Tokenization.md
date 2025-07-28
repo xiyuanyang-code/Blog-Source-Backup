@@ -1,0 +1,61 @@
+---
+title: "LLML CS336: Lecture 1 Overview and Tokenization"
+date: 2025-07-28 23:39:49
+index_img: /img/cover/tokenize.jpg
+excerpt: "Lecture Notes for CS336: Lecture 1 Overview and Tokenization, as a part of tutorial for LLM Learning Plan as well."
+math: True
+categories:
+  - Artificial Intelligence
+  - LLM
+tags:
+  - Tutorial
+  - LLM
+  - Tokenization
+---
+
+# CS336: Lecture 1 Overview and Tokenization
+
+<style>
+  html, body, .markdown-body {
+    font-family: Georgia, sans, serif;
+  }
+</style>
+
+## Course Overview
+
+[Course Information](https://stanford-cs336.github.io/spring2025/)
+
+{% note primary %}
+
+Full understanding of this technology is necessary and crucial for fundamental search, rather than just calling a prompt. 
+
+{% endnote %}
+
+{% note info %}
+
+There are three types of knowledge:
+    
+- Mechanics: how things work (what a Transformer is, how model parallelism leverages GPUs)
+    
+- Mindset: squeezing the most out of the hardware, taking scale seriously (scaling laws)
+    
+- Intuitions: which data and modeling decisions yield good accuracy
+    
+We can teach mechanics and mindset (these do transfer). We can only partially teach intuitions (do not necessarily transfer across scales).
+
+{% endnote %}
+
+### About Scaling Law & The bitter lesson
+
+Is the algorithm really making no sense? Of course not! We cannot afford to make it so wasteful!
+
+- Wrong interpretation: scale is all that matters, algorithms don't matter.
+- Right interpretation: **algorithms that scale is what matters**.
+    
+$$\text{accuracy} = \text{efficiency} \times \text{resources}$$
+
+In fact, efficiency is way more important at larger scale (can't afford to be wasteful). In other words, maximize efficiency!
+
+## Tokenization
+
+to be done in the future.

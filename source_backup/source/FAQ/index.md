@@ -24,7 +24,7 @@ date: 2024-12-06 19:48:05
 
 ## 全是烂尾文章？
 
-呜呜呜别骂了。。。博客的更新真的好花时间。。。一般来说，笔者会努力把前面的就坑全部填上再开新坑哒。
+呜呜呜别骂了... 博客的更新真的好花时间... 一般来说，笔者会努力把前面的就坑全部填上再开新坑哒。
 
 - 一般在`Home`页写好摘要，设置好封面，Tags中标上`Finished`的文章就是已经完成不会大改的文章，可放心食用~
 - 如果Tags标注是`Updating`，一般是一些声明性的文章，表示内容会时不时地更新。
@@ -55,18 +55,14 @@ date: 2024-12-06 19:48:05
 在博客正文中使用的图片都会储存在**图床**中（除了引用别人的图片），网站 **[IMG.TG](https://img.tg/yangxiyuan/albums)**
 
 
-
-
-
-> 最后引用一下我的偶像的博客的FAQ的最后一个问题：
+> 最后引用一下我的偶像的博客的 FAQ 的最后一个问题：
 >
 > 相关网址：[lilianweng](https://lilianweng.github.io/faq/)
 >
 > **Q: How can you keep up blogging?**
->
 > **A:** "Pain is inevitable but suffering is optional" --- this is the first sentence of Haruki Murakami's book ["What I Talk About When I Talk About Running"](https://www.goodreads.com/book/show/2195464.What_I_Talk_About_When_I_Talk_About_Running). I love that book. His altitude towards running is pretty much aligned with how I feel about maintaining this blog.
 
-<div/>
+</div>
 
 
 

@@ -459,4 +459,10 @@ After entering university, the author realized that the new knowledge to be lear
   - **Agent: Refactoring and finishing the file filtering module for Repo-Coding Agent**.
   - LLM：Attention Mechanism 收尾
   
+- `2025/07/28`:
+  - **挑战杯**：完成本周规划对齐挑战杯的任务 & 开始写文档
+  - **博客更新**：完成 Transformer 论文精读 & 李沐《动手学深度学习》Attention 章节的收尾 & 完成两篇陈年博客的更新
+    - 终于把博客的数学公式更新好了， mathjax 简直一坨大便。
+  - **Agent: Adding the basic class for CodingAgent, inherited from ChatAgent in CamelAI**
+  - **量化择时研究**：学习基本知识 & 规划后续文档调研
 </div>

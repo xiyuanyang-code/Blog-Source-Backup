@@ -132,9 +132,12 @@ $$P(y_{t^{\prime}} | y_1, y_2, \dots, y_{t^{\prime} - 1}, \mathbf{c})$$
 
 - Attention模块会输出一个 embedding, 这个embedding 和编码器的隐状态在相同的空间下（因为 Attention 的键值对都是编码器的隐藏状态序列），用公式表示就是：
 
-$$\mathbf{c}\_{t^\prime} = \Sigma^{n}\_{t = 1} \alpha(\mathbf{s}\_{t^{\prime}-1}, \mathbf{h}\_t)\mathbf{h}\_t 
-$$$$
-\mathbf{s}\_{t^{\prime}} = g(y\_{t^{\prime}}, \mathbf{c}\_{t^{\prime}}, \mathbf{s}\_{t^{\prime} - 1})
+$$
+\begin{split}
+\mathbf{c}_{t^\prime} = \sum^{n}_{t = 1} \alpha(\mathbf{s}_{t^{\prime}-1}, \mathbf{h}_t)\mathbf{h}_t
+\\
+\mathbf{s}_{t^{\prime}} = g(y_{t^{\prime}}, \mathbf{c}_{t^{\prime}}, \mathbf{s}_{t^{\prime} - 1}) 
+\end{split}
 $$
 
 
@@ -145,9 +148,9 @@ $$
 
 ### Overall Architecture
 
-#### Input and Output
+Transformer 的整体网络结构仍然保留了 **Encoder-Decoder** 的网络结构。相比于上文所涉及的添加注意力层的结构，Transformer 大胆地砍掉了循环神经网络的部分。Transformer 的编码器和解码器是**基于自注意力的模块**叠加而成的，源（输入）序列和目标（输出）序列的嵌入（embedding）表示将加上**位置编码（positional encoding）**，再分别输入到编码器和解码器中。
 
-Transformer的整体网络结构仍然保留了 **Encoder-Decoder** 的网络结构。因此输入是一个 $(\text{batch} \times \text{sequence length} \times \text{embedding dimension})$ 的三维张量，经过位置编码之后（**Positional Encoding**）之后进入编码器。而解码器会接受（目标序列的Embeddings）和编码器的输出，不过为了保证模型的正确性，**Output Embeddings**需要先做一个掩码（Masked），再进行输入。
+因此输入是一个 $(\text{batch} \times \text{sequence length} \times \text{embedding dimension})$ 的三维张量，经过位置编码之后（**Positional Encoding**）之后进入编码器。而解码器会接受（目标序列的Embeddings）和编码器的输出，不过为了保证模型的正确性，**Output Embeddings**需要先做一个掩码（Masked），再进行输入。
 
 > 在Transformer训练的过程中，是可以看到完整的目标序列的，但是**我们希望Transformer**不可以未卜先知，而是应该根据之前的内容做预测，因此会采用掩蔽矩阵来消除后续词的影响。
 
@@ -155,21 +158,86 @@ Transformer的整体网络结构仍然保留了 **Encoder-Decoder** 的网络结
 
 > 对于训练过程，目标序列y是已知的，因此我们需要使用掩码来防止模型在训练过程中未卜先知，只能利用之前的生成序列。而对应生成过程，我们不知道目标序列，因此需要模型根据自己之前的生成加上编码器的新的输出来做预测。
 
-#### Encoder and Decoder
-
 ![image](https://s1.imagehub.cc/images/2025/04/18/2ab890cbb37661ed1d1f5ed626c55f57.png)
 
 首先，其采用了类似于ResNet的堆叠模式（$N = 6$）。下面只对对一个单元层进行分析：
 
-- 在Encoder部分，我们可以看到两个子模块，第一个子模块是**Multi-Head Attention**(是用来模拟卷积神经网络的多通道特征学习来达到并行的目的，后面会详细介绍)，第二个子模块是**标准的全连接前馈神经网络**。
+- 在Encoder部分，我们可以看到两个子模块，第一个子模块是**Multi-Head Attention**，第二个子模块是**标准的全连接前馈神经网络**。
 - 不过在每一个子模块内，**又加入了residual connection**（ResNet）并且做了**归一化**的处理（LayerNorm）。
 
 - 对于解码器也是类似的结构，不过加了一个**Masked MultiHead Attention**的结构来防止模型看到后面的预测序列。
 
-### Embeddings and softmax
+### Embeddings
+
+模型的原始输入是一个个词元，每一个词元会根据**单独训练的词表**经过 embedding 的操作长成一个**语义空间下的向量**。不同语言的词表不一样，这并不是 Transformer 的重点。为了更方便的建模序列位置信息，在输入模块之前还加入了**位置编码**的过程。
+
+### Encoder
+
+相比于传统的 Encoder 结构，Transformer 中的 Encoder 大胆了抛弃了循环神经网络的部分，而改用给予自注意力模式的 attention module。Encoder 部分的第一个子模块利用**自注意力机制**，用来学习**输入文本的上下文信息**（**多头注意力**可以聚焦到更加细节的特征学习上），接下来加入残差连接和**归一化**的操作。接下来第二个部分加入了一个**两层的全连接神经网络**，用来学习序列中的非线性部分。（因为缩放点积注意力是线性的，因此为了拟合非线性的特征，需要利用神经网络全连接层的激活函数实现这一点。）
 
 ### Feed-forward Networks
 
-## Complexity
+用来学习非线性特征，使用 `RELU` 作为激活函数。
 
-## Experiments
+$$\text{FFN}(x) = \max(0, xW_1 + b_1)W_2 + b_2$$
+
+### Decoder
+
+Decoder 的设置相对更加复杂，对于一个堆叠块内部：首先需要进入**掩码自注意力模块**，为了防止模型在训练时直接 Access 到后面的参考答案。在经过 Add & Norm 之后，进入第二个 Attention 模块，**这个模块和之前的不同，不再是 Self-Attention**，因为其 K, V 都来自于 Encoder 的输出序列，即 $(z_i, z_i)$ 会被作为 $n$ 个键值对进入这个注意力模块。
+
+> **注意！$(z_i, z_i)$ 虽然还是在原有语义下的向量，但是已经通过编码器学习到了句子的上下文关系**，这种上下文关系可以被用在翻译后的语言上，但是需要融合嵌入进翻译后语言的语义空间上。
+
+经过这个注意力模块后，模型已经能够捕捉到句子的上下文了，但是还需要迁移到另一个语义空间中，因此后面还需要接一个前馈神经网络进行融合。
+
+最后，经过一个线性层将特征投影到英文词表上，并做概率分布的 softmax 计算，最终就得到了输出 $y_{t^{\prime}}$ 的词汇的概率分布。
+
+### Normalization
+
+todo in the future.
+
+## Complexity: Why Self-Attention
+
+在相同的 Encoder-Decoder 的基本架构下，为什么选择 Transformer 具有优势？笔者在这个部分从时间复杂度的角度探讨了这一点：
+
+从形式化的角度去理解，编码器都完成了这样的一件事情：将输入序列 $(x_1, x_2, \dots, x_n)$ 编码，输出新的序列 $(z_1, z_2, \dots, z_n)$，这个序列应该包含原始文本的上下文信息，以便传递给解码器做输出。（编码编的**码**就是抽象的上下文信息），为了方便，这里认为 $x_i, z_i \in \mathbb{R}^{d}$。
+
+时间复杂度的计算主要依赖于三个指标：
+
+- Total computational complexity per layer (这一部分的时间复杂度主要在做的矩阵乘法以及矩阵的 size)
+
+- Amount of computation that can be parallelized
+
+- Path length between long-range dependencies in the network
+
+![Time Complexity](https://s1.imagehub.cc/images/2025/07/28/2efcaf8d950574b6fe5e24977c06ca93.png)
+
+## Experiments & Results
+
+一些训练细节的内容详见论文原文，此处不介绍。
+
+![Result](https://s1.imagehub.cc/images/2025/07/28/f1ea1b3994e60f13048fcc0a9aa7eb1c.png)
+
+
+相关参数是：
+
+- $N$: 堆叠 Transformer 块的数量
+
+- $d_{\text{model}}$: Embedding dimension
+
+- $d_{\text{ff}}$: 前馈网络的深度（前馈神经网络隐藏层的深度）
+
+- $h$: number of multi heads
+
+- $d_k$: Dimensions of keys, $d_k = \frac{d_{\text{model}}}{h}$，一个方面是为了学习特征，另一方面是为了拼接后保持一致。
+
+- $d_v$: Dimensions of queries
+
+- $P_{\text{drop}}$: Dropout rate
+
+- $\epsilon_{\text{ls}}$: Label Smoothing
+
+{% note primary %}
+
+In Table 3 rows (B), we observe that **reducing the attention key size dk hurts model quality**. This suggests that determining compatibility is not easy and that a more sophisticated compatibility function than dot product may be beneficial. We further observe in rows (C) and (D) that, as expected, **bigger models are better**, and **dropout is very helpful in avoiding over-fitting**. In row (E) we replace our sinusoidal positional encoding with learned positional embeddings, and observe nearly identical results to the base model.
+
+{% endnote %}

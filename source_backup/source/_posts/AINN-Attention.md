@@ -870,7 +870,9 @@ $$\mathbf{h_i} = f(q'_i , k'_i , v'_i ) \in \mathbb{R}^{p_v}$$
 
 $$\begin{bmatrix}\mathbf h_1 \\ \vdots \\ \mathbf h_h\end{bmatrix} \in \mathbb{R}^{h \times p_v}$$
 
-最终施加一个全连接层，设计一个可学习矩阵$\mathbf{W_o} \in \mathbb{R}^{p_o \times h \times p_v}$。
+合并维度：$h_{\text{sum}} = h \times p_v$。
+
+最终施加一个全连接层，设计一个可学习矩阵 $\mathbf{W_o} \in \mathbb{R}^{p_o \times h_{\text{sum}}}$。
 
 > 因为施加了一个可学习矩阵，因此最后输出的维度并不是 $p_v$，而是 $p_0$。当然，这是一般化的设计，在一些具体的架构设计上，为了简化超参数 & 空间对齐，我们往往会令 $p_v = p_0$。
 

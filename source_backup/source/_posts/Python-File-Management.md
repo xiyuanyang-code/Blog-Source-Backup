@@ -406,8 +406,6 @@ except FileNotFoundError:
 
 ## Data Storage：`JSON`
 
-### What is `JSON` ?
-
 **JSON 文件** 是一种用于**存储和交换数据的文件格式**，全称是 **JavaScript Object Notation**（JavaScript 对象表示法）。它的设计目标是易于人类阅读和编写，同时也易于机器解析和生成。
 
 JSON 文件的内容是由 **“键值对”** 组成的，就像字典一样。是一种轻量级的数据格式。
@@ -427,126 +425,35 @@ JSON 文件的内容是由 **“键值对”** 组成的，就像字典一样。
 
 `JSON`文件最强大的用处在于**数据的传输和存储**，例如前后端之间API的调用、软件的配置信息、存储结构化数据（日志，用户信息）等等。
 
-### `JSON` in Python
+{% note primary %}
 
-在Python中，也可以使用`json`模块来进行文件管理。
+- 序列化 (Serialization)：将 Python 对象转换为 JSON 格式的数据。
 
-1. **将 Python 对象转换为 JSON 字符串**
+    - json.dumps(): 将 Python 对象转换为 JSON 格式的字符串。
 
-使用 `json.dumps()` 可以将 Python 对象（如字典、列表）转换为 JSON 格式的字符串。
+    - json.dump(): 将 Python 对象转换为 JSON 格式并写入到文件。
 
-```python
-from pathlib import Path
-import json
+- 反序列化 (Deserialization)：将 JSON 格式的数据转换回 Python 对象。
 
-# 准备数据
-data = {
-    "name": "小红",
-    "age": 20,
-    "isStudent": False,
-    "favoriteFoods": ["火锅", "冰淇淋"]
-}
+    - json.loads(): 从 JSON 格式的字符串中读取数据并转换为 Python 对象。
 
-# 将 Python 对象转换为 JSON 字符串
-json_string = json.dumps(data, indent=4, ensure_ascii=False)
-# 这一步会在当前目录下生成一个data.json文件
-print(json_string)
+    - json.load(): 从 JSON 文件中读取数据并转换为 Python 对象。
 
+|Name|Description|Demo|
+|-----|----------|-----|
+|`json.dumps()`|Python Object -> String (Json format)|`json_string = json.dumps(data, indent=4, ensure_ascii=False, sorted_keys=True)`|
+|`json.dump()`|Python Object -> Write into Json File|`json.dump(data, file, indent=4, ensure_ascii=False, sorted_keys=True)`|
+|`json.loads()`|String (Json format) -> Python Object|`data = json.loads(json_string)`|
+|`json.load()`|Data from Json File -> Python Object|`data = json.load(file)`|
 
-# 使用 pathlib 写入文件
-file_path = Path("data.json")
-file_path.write_text(json_string, encoding="utf-8")
-```
+> file should be open with `with open(file_path, "r") as file`
 
-```json
-{
-    "name": "小明",
-    "age": 18,
-    "isStudent": true,
-    "hobbies": [
-        "打篮球",
-        "听音乐"
-    ]
-}
-```
-
-- **`indent=4`**：让 JSON 字符串格式化输出，缩进 4 个空格。
-- **`ensure_ascii=False`**：确保非 ASCII 字符（如中文）正常显示。
-
-2. **将 JSON 字符串转换为 Python 对象**
-
-使用 `json.loads()` 可以将 JSON 格式的字符串转换为 Python 对象（如字典、列表）。
-
-```python
-from pathlib import Path
-import json
-
-# 使用 pathlib 读取文件
-file_path = Path("data.json")
-json_string = file_path.read_text(encoding="utf-8")
-
-# 将 JSON 字符串转换为 Python 对象
-data = json.loads(json_string)
-print(data["name"])  # 输出：小红
-print(data["favoriteFoods"])  # 输出：['火锅', '冰淇淋']
-```
+{% endnote %}
 
 ### Usage: User_info management
 
 学会了`json`的基本操作后，我们可以实现一个**迷你数据库**：用来存储用户的数据，进行读写等操作。
 
-```Python
-from pathlib import Path
-import json
-
-# 获取用户输入的名字
-user_name = input("Hello! What is your name? ")
-user_name_path = Path("user_info.json")
-
-# 初始化用户数据
-all_user_data = []
-
-# 如果文件存在，读取文件内容
-if user_name_path.exists():
-    all_user_contents = user_name_path.read_text(encoding="utf-8")
-    all_user_data = json.loads(all_user_contents)
-
-# 检查用户是否已经存在
-user_exists = False
-user_info = None
-
-for user in all_user_data:
-    if user.get("name") == user_name:
-        user_exists = True
-        user_info = user
-        break
-
-if user_exists:
-    # 用户已经注册过
-    print(f"Welcome Back, {user_name}!")
-    print(f"Your favourite food is {user_info.get('food')}")
-else:
-    # 新用户
-    print(f"Hello {user_name}! It seems that you are new here.")
-    fav_food = input("What is your favourite food? ")
-
-    # 创建新用户数据
-    new_user = {
-        "name": user_name,
-        "food": fav_food
-    }
-
-    # 将新用户添加到用户列表中
-    all_user_data.append(new_user)
-
-    # 将更新后的用户列表写入文件
-    with open("user_info.json", "w", encoding="utf-8") as json_file:
-        json.dump(all_user_data, json_file, ensure_ascii=False, indent=4)
-
-    print("Your information has been saved. Welcome!")
-```
-
-**这样的Python代码习惯实在是太差了！**下面是对函数体封装后的优化写法：
 
 ```Python
 from pathlib import Path
@@ -632,11 +539,7 @@ if __name__ == "__main__":
 
 #### `Matplotlib`
 
-Python的强大之处之一在于**其活跃的社区生态**，通过`pip install`他人的第三方库，我们可以实现更多强大的功能，接下来的章节笔者将重点介绍`Matplotlib`的使用。
-
-> 这一章的学习非常有趣，强烈建议初学者一起上手操作。
-
-`Matplotlib` 是 Python 中最流行的数据可视化库之一，广泛用于创建静态、动态和交互式的图表。它提供了类似于 MATLAB 的绘图接口，简单易用且功能强大。以下是 `Matplotlib` 的简单介绍和基本用法：
+Python的强大之处之一在于**其活跃的社区生态**，通过`pip install`他人的第三方库，我们可以实现更多强大的功能，接下来的章节笔者将重点介绍`Matplotlib`的使用。`Matplotlib` 是 Python 中最流行的数据可视化库之一，广泛用于创建静态、动态和交互式的图表。它提供了类似于 MATLAB 的绘图接口，简单易用且功能强大。以下是 `Matplotlib` 的简单介绍和基本用法：
 
 (1) **绘制简单的折线图**
 
@@ -1243,6 +1146,4 @@ output = pd.DataFrame({
     'Survived': test_predictions
 })
 output.to_csv('submission.csv', index=False)
-
-
 ```

@@ -1,6 +1,6 @@
 ---
 title: AINN Attention
-date: 2025-04-29 19:55:46
+date: 2025-07-28 11:55:46
 index_img: /img/cover/attention.jpg
 excerpt: The introduction and explanation for the Basic Neural Network Transformer.
 math: true
@@ -34,12 +34,6 @@ tags:
 
 今天的博客将会聚焦于**Attention Mechanism**的思想和数学实现。
 
-## Table of Contents
-
-- **注意力机制**
-- **RNN和seq2seq**
-- **seq2seq**和**RNN**的结合
-
 ## Attention Mechanism
 
 注意力机制是从生物学上获得的启发。应用到视觉世界中，威廉·詹姆斯提出了**双组件框架**，即人通过**自主性提示和非自主性提示**来选择性地引导注意力的焦点。
@@ -72,7 +66,7 @@ tags:
 
 对于人类一般性的行为，我们可以建模成：
 
-$$\boxed{\text{attention}} \to \boxed{\text{sensory input}} \to \boxed{\text{output}}$$
+$$\text{attention} \to \text{sensory input} \to \text{output}$$
 
 > 视觉上产生了**注意力**（自主 & 非自主），接着在大脑皮层产生感觉，并做出对应的输出。
 >
@@ -874,12 +868,129 @@ $$\mathbf{h_i} = f(q'_i , k'_i , v'_i ) \in \mathbb{R}^{p_v}$$
 
 这是多头注意力中**多头的部分**，最终经过h个Attention模块后得到一个二维矩阵，也可以写成列向量的形式：
 
-$$\begin{bmatrix}\mathbf h_1\\\vdots\\\mathbf h_h\end{bmatrix} \in \mathbb{R}^{h \times p_v}$$
+$$\begin{bmatrix}\mathbf h_1 \\ \vdots \\ \mathbf h_h\end{bmatrix} \in \mathbb{R}^{h \times p_v}$$
 
 最终施加一个全连接层，设计一个可学习矩阵$\mathbf{W_o} \in \mathbb{R}^{p_o \times h \times p_v}$。
 
-$$\mathbf W_o \begin{bmatrix}\mathbf h_1\\\vdots\\\mathbf h_h\end{bmatrix} \in \mathbb{R}^{p_o}$$
+> 因为施加了一个可学习矩阵，因此最后输出的维度并不是 $p_v$，而是 $p_0$。当然，这是一般化的设计，在一些具体的架构设计上，为了简化超参数 & 空间对齐，我们往往会令 $p_v = p_0$。
+
+$$\mathbf W_o \begin{bmatrix}\mathbf h_1 \\ \vdots \\ \mathbf h_h\end{bmatrix} \in \mathbb{R}^{p_o}$$
 
 基于这种设计，每个头都可能会关注输入的不同部分，可以表示比简单加权平均值更复杂的函数。并且在多头注意力的情况下，单个查询，单个键值对所返回的评分不再是一个标量评分而是一个向量（**因为多头注意力引入了dimension上的注意力**）
 
 #### Code
+
+Skip that part, to be done in the future.
+
+### Self-Attention
+
+以缩放点积注意力为例：
+
+$$\text{Attention}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \mathrm{softmax}\left(\frac{\mathbf Q \mathbf K^\top }{\sqrt{d}}\right) \mathbf V \in \mathbb{R}^{n\times v}$$
+
+在利用注意力机制进行时间序列建模的过程中，**查询，键和值**都来自于同一组输入（一组序列文本），即考虑一组输入序列：$\mathbf{x}_1, \mathbf{x}_2, \dots \mathbf{x}_n, \mathbf{x}_i \in \mathbb{R}^{d}$，注意力机制的输出是：
+
+$$\mathbf{y}_i = f(x_i, (x_1, x_1), (x_2, x_2), \dots, (x_n, x_n))$$
+
+其中 $x_i$ 代表对应序列的查询词元，即 $\mathbf{q}$，后续的即为 $n$ 个键值对。在实际应用中，会施加可学习矩阵来做线性变换。在实际应用中，会传入一个矩阵 $X \in \mathbb{R}^{\text{batch size} \times \text{query} \times \text{output dim}}$，三个维度分别代表批量，传入的查询个数（序列长度），输出维度。（为了简化，输入和输出保持相同的维度），因此，矩阵传入的形式是：
+
+$$\text{Attention Score} = \texttt{attention}(X, X, X, \text{valid\_lens}) \in \mathbb{R}^{\text{batch size} \times \text{query} \times \text{output dim}} $$
+
+### Comparing with CNN and RNN
+
+由于其良好的并行特性，使得注意力机制在序列建模上快速打败传统的序列建模模型，例如 CNN 和 RNN。
+
+- 序列长度为 $n$，输入和输出通道为 $d$。
+
+- 在**卷积神经网络**中，考虑卷积核大小为 $k$，复杂度为 $O(knd^2)$
+
+- 在**循环神经网络**中，复杂度为 $O(nd^2)$，最大路径长度为 $O(n)$，无法并行。
+
+- 使用注意力机制，缩放点击注意力带来的两次矩阵乘法的时间复杂度为 $O(n^2 d)$，同时，最大路径长度为 $O(1)$。
+
+> 最大路径长度指的是在模型架构中，信息从一个输入位置（比如句子中的一个词）传播到任何一个输出位置（比如对应这个词的最终表示）所需要的最少顺序计算步数。路径越短，长距离以来越好。
+
+### Positional Encoding
+
+注意力机制抛弃了串行式的词元处理状态，采用并行化的设计而牺牲了序列信息，例如，在计算注意力分数的时候交换不同键值对的位置在形式上对最后的 Attention Score 没有影响，这会影响最后建模的序列性。
+
+因此，需要加入额外的项来表示**序列的顺序信息**，即在输入中添加 Positional Encoding 来注入绝对的或者相对的位置信息。下面介绍一种最常见的位置编码：**基于正余弦的固定位置编码**。
+
+输入 $\mathbf{X} \in \mathbb{R}^{n \times d}$，考虑嵌入矩阵 $\mathbf{P} \in \mathbb{R}^{n \times d}$，最终输出的结果是 $\mathbf{X} + \mathbf{P}$。其中：
+
+$$
+p_{(i, 2j)} = \sin(\frac{i}{10000^{2j/d}}), \ p_{(i, 2j+1)} = \cos(\frac{i}{10000^{2j/d}})
+$$
+
+#### 绝对位置信息
+
+在二进制中，较高位的交替频率低于较低位，因此，位置编码效仿这样的设计，随着编码维度的增加（列，代表编码位置的不同维度），因此，对于不同的行，（行即代表着序列的原始位置信息），横坐标 $i$ 对应的位置编码矩阵在不同的列 $j$ 下的值都不相同。
+
+> $j$ 可以看做控制三角函数的频率信息（以 $i$ 为自变量），而频率不同可以很好的在一个周期性函数上表示非周期的特征，简单来说，**每一个行学习到的 `p[i, :]` 都是不同的**。
+
+
+#### 相对位置信息
+
+使用固定位置编码也可以学习到**相对位置的特征**，例如一些词组的特定搭配等等，从数学语言解释：**对于任何确定的位置偏移量 $\delta$，位置 $\delta + i$ 处的位置编码可以用线性投影 $i$ 处的位置编码通过一个与位置无关的线性投影 $M$ 得到**。其中：
+
+$$M = \begin{bmatrix}
+  \cos(\delta\omega_j)& \sin(\delta\omega_j) \\
+  -\sin(\delta\omega_j) & \cos(\delta\omega_j)
+\end{bmatrix}$$
+
+{% note info %}
+
+上文的线性投影矩阵也具有几何意义，考虑线性变换：
+
+$$\left[\begin{array}{l}
+x^{\prime} \\
+y^{\prime}
+\end{array}\right]=\left[\begin{array}{cc}
+\cos \left(\delta \omega_{j}\right) & \sin \left(\delta \omega_{j}\right) \\
+-\sin \left(\delta \omega_{j}\right) & \cos \left(\delta \omega_{j}\right)
+\end{array}\right]\left[\begin{array}{l}
+x \\
+y
+\end{array}\right]$$
+
+$$\begin{array}{l}
+x^{\prime}=x \cos \left(\delta \omega_{j}\right)+y \sin \left(\delta \omega_{j}\right) \\
+y^{\prime}=-x \sin \left(\delta \omega_{j}\right)+y \cos \left(\delta \omega_{j}\right)
+\end{array}$$
+
+其中 $\omega_j = \frac{1}{10000^{2j/d}}$。
+
+这代表着坐标点 $(x^{\prime}, y^{\prime})$ 是原坐标点 $(x,y)$ 经过旋转 $\delta\omega_j = \frac{\delta}{10000^{2j/d}}$ 个弧度制得来的。在这个语境下，指的是从 $(p_{(i,2j)}, p_{(i, 2j+1)})$ 到 $(p_{(i + \delta,2j)}, p_{(i + \delta, 2j+1)})$ 的线性变换过程。
+
+{% endnote %}
+
+> 这只是数学上的一种解释，实际上这样的矩阵会蕴含在在实际模型的**可学习矩阵中**。
+
+## Conclusion
+
+Attention is all you need！总结一下，我们这个部分主要 cover 了：
+
+- Intuitive Attention Machnism: the basic design of key, value and query.
+
+- Attention Pooling Algorithm: Calculate the correlation of each key and the query.
+
+- Attention Scoring Function:
+
+    - Masked Softmax Operation
+
+    - Additive Attention 
+
+    - Scaled Dot-product Attention
+
+- MultiHead Attention
+
+- Self Attention
+
+- Positional Encoding
+
+{% note primary %}
+
+For the next chapter, we will dive into seq2seq model and the transformer structure!
+
+{% endnote %}
+

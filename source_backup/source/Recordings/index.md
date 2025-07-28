@@ -452,4 +452,11 @@ After entering university, the author realized that the new knowledge to be lear
   - **Agent**: **Begin a big project: Simple Coding Agent.**
   - **论文**: 开始学习 LLM 的相关论文积累环节
   - **SAI Community**: 完成大部分课程的信息收集环节
+
+- `2025/07/27`:
+  - **规划**：规划后续LLM的学习
+  - 完成两篇博客 CLI 和 LLM Initial 的更新
+  - **Agent: Refactoring and finishing the file filtering module for Repo-Coding Agent**.
+  - LLM：Attention Mechanism 收尾
+  
 </div>

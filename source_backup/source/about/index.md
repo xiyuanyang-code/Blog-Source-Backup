@@ -13,14 +13,10 @@ Greetings! I am **Xiyuan Yang (杨希渊)**, currently pursuing an undergraduate
 
 **My resume**: [My resume](https://xiyuanyang-code.github.io/resume/)
 
-**My orcid**: https://orcid.org/0009-0004-8979-7892
-
 **My email:**
 
-- xiyuan__yang@outlook.com
+- [xiyuan__yang@outlook.com](mailto:xiyuan__yang@outlook.com)
 
-- yangxiyuan@sjtu.edu.cn
+- [yangxiyuan@sjtu.edu.cn](mailto:yangxiyuan@sjtu.edu.cn)
 
   Feel free to contact me!
-
-> VENI VIDI VICI

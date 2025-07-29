@@ -74,3 +74,11 @@ The tokenization includes the **encoding and decoding process** for the word lis
 
 - Decoding: convert numbers back to strings
 
+The vocabulary size is the number.
+
+### Several Notifications
+
+- All the blank space are tokens
+
+- spaCy internally uses **hash values to represent strings**, and these hashes map to integer IDs.
+

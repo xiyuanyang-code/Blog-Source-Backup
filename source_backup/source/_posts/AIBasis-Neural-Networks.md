@@ -1,11 +1,11 @@
 ---
-title: AIBasis_Neural_Networks
+title: AIBasis Neural Networks
 date: 2025-04-04 00:17:59
 index_img: /img/cover/NNintro.jpg
 excerpt: The Introduction for Blog Updating several classical neural network and its applications.
 categories:
   - Artificial Intelligence
-  - AINN
+  - Deep Learning
 tags:
   - Artificial Intelligence
   - Deep Learning

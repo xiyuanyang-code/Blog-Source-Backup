@@ -2,11 +2,11 @@
 title: ImageNet and ILSVRC
 date: 2025-04-14 10:21:32
 index_img: /img/cover/AlexNet-1.jpg
-hide: false
 math: true
 excerpt: A detailed explanation of the mathematical principles of convolutional neural networks.
 categories:
   - Artificial Intelligence
+  - Deep Learning
 tags:
   - Convolutional Neural Networks
   - Artificial Intelligence

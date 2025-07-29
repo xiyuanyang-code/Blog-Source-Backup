@@ -5,6 +5,7 @@ index_img: /img/cover/llmeva.png
 excerpt: Initial try for LLM evaluating on gsm8k dataset.
 categories:
   - Artificial Intelligence
+  - LLM
 tags:
   - Tutorial
   - Finished

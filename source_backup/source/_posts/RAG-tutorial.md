@@ -6,6 +6,7 @@ math: true
 excerpt: Theoretical explanation and implementation of RAG for LLM uasge.
 categories:
   - Artificial Intelligence
+  - LLM
 tags:
   - RAG
   - LLMs

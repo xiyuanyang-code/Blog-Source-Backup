@@ -25,11 +25,19 @@ tags:
 
 [Course Information](https://stanford-cs336.github.io/spring2025/)
 
-{% note primary %}
+**ALL FOCUSED ON EFFICIENCY**
+
+The main 5 components for this course:
+
+![Course Components](https://stanford-cs336.github.io/spring2025-lectures/images/design-decisions.png)
+
+More descriptions about the course overview can be found in [Course Lecture Notes](https://stanford-cs336.github.io/spring2025-lectures/?trace=var%2Ftraces%2Flecture_01.json).
+
+## More than a course overview...
+
+What I will learn from this course?
 
 Full understanding of this technology is necessary and crucial for fundamental search, rather than just calling a prompt. 
-
-{% endnote %}
 
 {% note info %}
 
@@ -58,4 +66,11 @@ In fact, efficiency is way more important at larger scale (can't afford to be wa
 
 ## Tokenization
 
-to be done in the future.
+[Recommended Resources](https://www.youtube.com/watch?v=zduSFxRajkE)
+
+The tokenization includes the **encoding and decoding process** for the word list. We will focus on **Byte-pair Encoding** (BPE) for this section.
+
+- Encoding: convert string to numbers
+
+- Decoding: convert numbers back to strings
+

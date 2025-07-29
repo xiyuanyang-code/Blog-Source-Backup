@@ -7,6 +7,7 @@ mermaid: true
 math: true
 categories:
   - Algorithm
+  - MIT 6.006 Introduction to Algorithms
 tags:
   - tutorial
   - Tree

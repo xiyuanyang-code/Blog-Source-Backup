@@ -465,4 +465,10 @@ After entering university, the author realized that the new knowledge to be lear
     - 终于把博客的数学公式更新好了， mathjax 简直一坨大便。
   - **Agent: Adding the basic class for CodingAgent, inherited from ChatAgent in CamelAI**
   - **量化择时研究**：学习基本知识 & 规划后续文档调研
+
+- `2025/07/29`:
+  - **挑战杯**：完成目录规划和写作
+  - **博客更新**：学习 Tokenization 的相关知识
+  - **Resume**: 更新简历
+  - **开发**: 加 Scoring 的新功能 
 </div>

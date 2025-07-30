@@ -24,4 +24,6 @@ date: 2025-07-25 12:50:48
         - Rereading and writing the summary notes for the classical transformer: **Attention is all you need**.
 
         - Thought: Attention pooling is the core component for understanding the power for transformer model, where context meaning is learning via the process of self-attention.
+
+    - `2025/07/29`: Attending courses for CS336-Lecture1: Course Overview and Tokenization
 </div>

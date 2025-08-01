@@ -26,4 +26,6 @@ date: 2025-07-25 12:50:48
         - Thought: Attention pooling is the core component for understanding the power for transformer model, where context meaning is learning via the process of self-attention.
 
     - `2025/07/29`: Attending courses for CS336-Lecture1: Course Overview and Tokenization
+
+    - `2025/07/30`: Read papers for Byte-Pair Encoding, just like the Huffman Encoding Process! (For shorter sequence and more efficiency).
 </div>

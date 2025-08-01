@@ -471,4 +471,12 @@ After entering university, the author realized that the new knowledge to be lear
   - **博客更新**：学习 Tokenization 的相关知识
   - **Resume**: 更新简历
   - **开发**: 加 Scoring 的新功能 
+
+- `2025/07/30`:
+  - **挑战杯**: 完成两部分调研文档的更新
+  - **博客**：完成 CS336 第一课的学习
+
+- `2025/07/31` ~ `2025/08/01`:
+  - **挑战杯** 完成 Version 2 的代码重构
+  - **CS 336**: 开始学习 CS 336 第二部分
 </div>

@@ -1,5 +1,5 @@
 ---
-title: "LLML CS336: Lecture 1 Overview and Tokenization"
+title: "LLML CS336 Lecture 1 Overview and Tokenization"
 date: 2025-07-28 23:39:49
 index_img: /img/cover/tokenize.jpg
 excerpt: "Lecture Notes for CS336: Lecture 1 Overview and Tokenization, as a part of tutorial for LLM Learning Plan as well."

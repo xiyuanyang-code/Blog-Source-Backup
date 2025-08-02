@@ -1,7 +1,7 @@
 ---
 title: Algorithm-Sorting
 date: 2025-03-29 22:09:03
-index_img: /img/cover/sort.png
+index_img: /img/cover/sort.jpg
 excerpt: Several classic and efficient sorting algorithms written in C++.
 math: true
 categories:

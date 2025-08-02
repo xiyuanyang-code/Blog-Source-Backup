@@ -1,7 +1,7 @@
 ---
 title: Class-Inheritance
 date: 2024-12-08 14:02:57
-index_img: /img/cover/inheritance.png
+index_img: /img/cover/inheritance.jpg
 excerpt: In this article, you will learn another core concept in object-oriented programming which are inheritance and polymorphism, including polymorphic public inheritance, virtual functions and ABC.
 categories:
   - Code

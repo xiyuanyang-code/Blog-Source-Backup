@@ -1,7 +1,7 @@
 ---
 title: Automaton NFA
 date: 2025-05-05 19:15:24
-index_img: /img/cover/NFA.png
+index_img: /img/cover/NFA.jpg
 excerpt: Nondeterministic finite automaton
 math: true
 categories:

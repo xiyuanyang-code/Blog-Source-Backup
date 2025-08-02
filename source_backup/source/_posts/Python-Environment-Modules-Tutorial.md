@@ -2,7 +2,7 @@
 title: Python Environment Modules Tutorial
 date: 2025-05-03 14:06:14
 excerpt: An advanced tutorial focusing on several modules of environment management in Python.
-index_img: /img/cover/os.png
+index_img: /img/cover/os.jpg
 categories:
   - Code
   - Python

@@ -1,7 +1,7 @@
 ---
 title: LLM Learning Initial
 date: 2025-07-27 15:19:57
-index_img: /img/cover/llmini.png
+index_img: /img/cover/llmini.jpg
 excerpt: Initial plan and learning materials for learning large language models from scratch.
 math: True
 categories:

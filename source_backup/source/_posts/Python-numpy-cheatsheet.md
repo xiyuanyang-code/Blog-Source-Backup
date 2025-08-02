@@ -1,7 +1,7 @@
 ---
 title: Python-numpy-cheatsheet
 date: 2025-03-06 13:01:00
-index_img: /img/cover/numpy.png
+index_img: /img/cover/numpy.jpg
 excerpt: This Blog focuses on the most frequently used python modules numpy, regarding its basic usage and several applications.
 categories:
   - Code

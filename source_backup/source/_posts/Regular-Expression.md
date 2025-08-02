@@ -1,7 +1,7 @@
 ---
 title: Regular-Expression
 date: 2025-02-03 11:20:33
-index_img: /img/cover/Regex.png
+index_img: /img/cover/Regex.jpg
 excerpt: The basic usage of Regular Expression and the powerful application of Regex in String matching and coding.
 categories:
   - Code

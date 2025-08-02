@@ -1,7 +1,7 @@
 ---
 title: Leetcode-Mistake-collection
 date: 2024-12-09 20:06:17
-index_img: /img/cover/Leetcode.png
+index_img: /img/cover/Leetcode.jpg
 excerpt: This blog introduces a new update plan. I will share the mistakes I made while solving LeetCode algorithm problems, along with reposting correct solutions and my organized notes.
 categories:
   - Algorithm

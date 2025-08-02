@@ -1,7 +1,7 @@
 ---
 title: Git Advanced Memo
 date: 2025-08-02 01:35:15
-index_img: /img/cover/gittutorial.png
+index_img: /img/cover/gittutorial.jpg
 excerpt: The advanced introduction to Git, including a memo for most frequently used git command, and the explanation of Version Control Philosophy and Joint Development.
 categories:
   - Efficient Tools

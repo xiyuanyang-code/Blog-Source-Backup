@@ -1,7 +1,7 @@
 ---
 title: Dynamic-Memory-and-Classes
 date: 2024-12-05 15:16:05
-index_img: /img/cover/dynamic.png
+index_img: /img/cover/dynamic.jpg
 excerpt: This blog reveals common pitfalls when using dynamic memory in classes and more advanced skills in memory management, focusing on how to cautiously use dynamic memory allocation.
 categories:
   - Code

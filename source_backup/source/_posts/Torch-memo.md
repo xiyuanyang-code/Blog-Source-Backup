@@ -1,7 +1,7 @@
 ---
 title: Torch-memo
 date: 2025-04-01 15:44:06
-index_img: /img/cover/torch.png
+index_img: /img/cover/torch.jpg
 excerpt: Frequently used torch Memo.
 categories:
   - Artificial Intelligence

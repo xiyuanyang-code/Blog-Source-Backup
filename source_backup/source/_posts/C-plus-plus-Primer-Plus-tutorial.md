@@ -1,7 +1,7 @@
 ---
 title: C-plus-plus-Primer-Plus-tutorial
 date: 2024-12-04 07:26:42
-index_img: /img/cover/C++ primer plus.png
+index_img: /img/cover/C++ primer plus.jpg
 excerpt: This blog anncounces the updating plan of the Object Oriented Programming Section of C++, based on the classic textbook "C++ Primer Plus"
 categories:
   - Code

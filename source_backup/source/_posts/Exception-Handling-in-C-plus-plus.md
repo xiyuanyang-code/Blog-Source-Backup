@@ -1,7 +1,7 @@
 ---
 title: Exception-Handling-in-C-plus-plus
 date: 2024-12-14 13:21:14
-index_img: /img/cover/Exception.png
+index_img: /img/cover/Exception.jpg
 excerpt: This article mainly introduces the exception handling mechanism introduced in C++, which includes throw (throwing exceptions), try (exception handling), and catch (catching exceptions).
 categories:
   - Code

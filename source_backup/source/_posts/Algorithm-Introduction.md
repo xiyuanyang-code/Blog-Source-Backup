@@ -1,7 +1,7 @@
 ---
 title: Algorithm-Introduction
 date: 2024-11-28 15:02:33
-index_img: /img/cover/recursion_tree.png
+index_img: /img/cover/recursion_tree.jpg
 excerpt: This article dives into the analysis of the time and space complexity of algorithms, as well as concepts behind recursive and iterative approaches and introduces related knowledge on data structures.
 categories:
   - Algorithm

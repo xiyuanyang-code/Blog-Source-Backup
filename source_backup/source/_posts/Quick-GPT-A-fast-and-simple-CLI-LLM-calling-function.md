@@ -1,7 +1,7 @@
 ---
 title: 'Quick-GPT: A fast and simple CLI LLM calling function'
 date: 2025-07-13 01:07:15
-index_img: /img/cover/quick-gpt.png
+index_img: /img/cover/quick-gpt.jpg
 excerpt: "My Github project: Quick-GPT, a fast and user-friendly CLI LLM calling command using just one command!"
 categories:
   - Project

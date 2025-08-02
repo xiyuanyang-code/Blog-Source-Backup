@@ -1,7 +1,7 @@
 ---
 title: DataStructure-Tree-Binary-Tree
 date: 2025-02-06 22:35:50
-index_img: /img/cover/binarytree.png
+index_img: /img/cover/binarytree.jpg
 excerpt: This Blog introduces several basic knowledge of binary Tree, including the linked implementation and its applications of calculating expressions and using Huffman Tree to minimize loss while coding.
 mermaid: true
 math: true

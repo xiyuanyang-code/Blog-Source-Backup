@@ -1,7 +1,7 @@
 ---
 title: Vim-tutorial
 date: 2025-01-23 12:59:07
-index_img: /img/cover/vim.png
+index_img: /img/cover/vim.jpg
 excerpt: This guide covers Vim's essential commands, modes, and shortcuts for efficient text editing, helping beginners and advanced users master its core features.
 categories:
   - Efficient Tools

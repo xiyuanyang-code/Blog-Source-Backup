@@ -1,7 +1,7 @@
 ---
 title: Torch Memo TensorBoard
 date: 2025-07-01 12:12:49
-index_img: /img/cover/Tensorboard.png
+index_img: /img/cover/Tensorboard.jpg
 excerpt: Tutorials for Tensor Board in torch.utils.tensorboard
 math: true
 categories:

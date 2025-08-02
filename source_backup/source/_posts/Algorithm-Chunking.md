@@ -1,7 +1,7 @@
 ---
 title: Algorithm-Chunking
 date: 2025-03-03 11:36:13
-index_img: /img/cover/chunking.png
+index_img: /img/cover/chunking.jpg
 excerpt: This article introduces the chunking algorithms.
 categories:
   - Algorithm

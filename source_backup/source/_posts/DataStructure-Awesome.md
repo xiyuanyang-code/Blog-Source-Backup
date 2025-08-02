@@ -1,7 +1,7 @@
 ---
 title: DataStructure Awesome
 date: 2025-06-10 22:52:45
-index_img: /img/cover/dsawesome.png
+index_img: /img/cover/dsawesome.jpg
 excerpt: "Final Project: All codes for implementations and applications of several data structures, including STLite final assignment."
 categories:
   - Algorithm

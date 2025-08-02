@@ -1,7 +1,7 @@
 ---
 title: Tools-Tutorial
 date: 2025-01-05 09:38:42
-index_img: /img/cover/tools.png
+index_img: /img/cover/tools.jpg
 excerpt: In this article, you will learn a set of methodologies that teach you how to master the use of tools through practical approaches, while continuously improving your skills through ongoing practice.
 categories:
   - Efficient Tools

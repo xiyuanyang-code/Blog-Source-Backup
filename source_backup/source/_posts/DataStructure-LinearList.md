@@ -1,7 +1,7 @@
 ---
 title: DataStructure-LinearList
 date: 2024-12-18 22:07:11
-index_img: /img/cover/list.png
+index_img: /img/cover/list.jpg
 excerpt:  This article introduces the basic data structure of linear tables, including their sequential and linked implementations. The article also introduces the linear tables in STL like vector and list.
 categories:
   - Algorithm

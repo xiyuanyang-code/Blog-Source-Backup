@@ -1,7 +1,7 @@
 ---
 title: DataStructure Graph AOE and AOV Network
 date: 2025-05-15 18:08:53
-index_img: /img/cover/aov.png
+index_img: /img/cover/aov.jpg
 excerpt: This Blog introduces AOE and AOV networks, with its applications using DFS and topological order.
 math: true
 categories:

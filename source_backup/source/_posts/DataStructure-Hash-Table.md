@@ -1,7 +1,7 @@
 ---
 title: DataStructure Hash Table
 date: 2025-04-17 13:52:32
-index_img: /img/cover/hashtable.png
+index_img: /img/cover/hashtable.jpg
 excerpt: This blog introduces common hash tables and hash functions, as well as several methods for resolving hash collisions. Finally, it discusses the usage of dynamic lookup tables in STL.
 math: true
 hide: false

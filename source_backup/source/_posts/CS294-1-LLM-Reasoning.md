@@ -1,7 +1,7 @@
 ---
 title: CS294-1-LLM-Reasoning
 date: 2025-02-12 15:09:51
-index_img: /img/cover/LLM-reasoning.png
+index_img: /img/cover/LLM-reasoning.jpg
 excerpt: This Blog introduces LLM reasoning, from introducing LLMs with intermediate steps to analogical reasoning and self-consistency. Then this blog introduces limitations and several papers related.
 categories:
   - Artificial Intelligence

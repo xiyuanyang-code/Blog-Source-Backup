@@ -1,7 +1,7 @@
 ---
 title: DataStructure-Tree
 date: 2025-02-06 20:57:06
-index_img: /img/cover/trees.png
+index_img: /img/cover/trees.jpg
 excerpt: This article introduces fundamental knowledge about tree data structures, including the key concept of hierarchy in trees, the strict standard definition of trees, and declaration of abstract base classes.
 mermaid: true
 categories:

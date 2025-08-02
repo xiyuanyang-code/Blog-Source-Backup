@@ -1,7 +1,7 @@
 ---
 title: CLI Roadmap
 date: 2025-07-27 15:30:16
-index_img: /img/cover/cli.png
+index_img: /img/cover/cli.jpg
 excerpt: Several website recommendations for command line interface usage, including fruitful technical blog and courses, and several specific guidelines for tool usage like vim and tmux, etc. This blog also introduce Unix Philosophy for further comprehension.
 categories:
   - Efficient Tools

@@ -1,7 +1,7 @@
 ---
 title: Leetcode-Mistake-collection-11-20
 date: 2024-12-10 13:06:52
-index_img: /img/cover/Leetcode.png
+index_img: /img/cover/Leetcode.jpg
 excerpt: Leetcode-Mistake-Collection-Episode-2, focusing on Hashmap, unordered_map, and two pointers.
 categories:
   - Algorithm

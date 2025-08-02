@@ -1,7 +1,7 @@
 ---
 title: Missing-Semester-Notes
 date: 2025-02-11 14:11:19
-index_img: /img/cover/missing.png
+index_img: /img/cover/missing.jpg
 excerpt: My own lecture notes for MIT course, Missing semester for your CS education.
 categories:
   - Efficient Tools

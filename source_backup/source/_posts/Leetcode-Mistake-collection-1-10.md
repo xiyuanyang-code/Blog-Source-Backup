@@ -1,7 +1,7 @@
 ---
 title: Leetcode-Mistake-collection-1-10
 date: 2024-12-10 8:05:02
-index_img: /img/cover/Leetcode.png
+index_img: /img/cover/Leetcode.jpg
 excerpt: Leetcode-Mistake-Collection-Episode1, focusing on arrays and Hashmap.
 categories:
   - Algorithm

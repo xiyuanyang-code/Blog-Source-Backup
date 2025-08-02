@@ -1,7 +1,7 @@
 ---
 title: Leetcode-Mistake-collection-21-30
 date: 2024-12-10 13:07:14
-index_img: /img/cover/Leetcode.png
+index_img: /img/cover/Leetcode.jpg
 excerpt: Leetcode-Mistake-Collection-Episode-3, focusing on Greedy Algorithm and dynamical programming.
 categories:
   - Algorithm

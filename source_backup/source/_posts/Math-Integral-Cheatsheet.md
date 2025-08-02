@@ -1,7 +1,7 @@
 ---
 title: Math Integral Cheatsheet
 date: 2025-05-23 14:43:19
-index_img: /img/cover/int.png
+index_img: /img/cover/int.jpg
 excerpt: Integral cheatsheet for poor freshman.
 mermaid: true
 categories:

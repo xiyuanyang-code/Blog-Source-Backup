@@ -1,7 +1,7 @@
 ---
 title: DataStructure-Tutorial
 date: 2024-12-15 20:12:17
-index_img: /img/cover/datastructure.png
+index_img: /img/cover/datastructure.jpg
 excerpt: An updating plan of data structure. 
 categories:
   - Algorithm

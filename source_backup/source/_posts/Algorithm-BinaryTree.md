@@ -1,7 +1,7 @@
 ---
 title: Algorithm-BinaryTree
 date: 2025-03-12 22:11:28
-index_img: /img/cover/mit6006.png
+index_img: /img/cover/mit6006.jpg
 excerpt: This blog introduces Binary Tree, with several operations of  O(logn) complexity. The blog then introduces AVL tree. This is my own lecture notes for MIT 6.006, Introduction to algorithms.
 mermaid: true
 math: true

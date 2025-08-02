@@ -1,7 +1,7 @@
 ---
 title: Pointers-Arrays-and-Functions
 date: 2024-12-14 23:45:20
-index_img: /img/cover/pointers.png
+index_img: /img/cover/pointers.jpg
 excerpt: This article will primarily focus on pointers, delving deep into the essence of memory and, based on this foundation, exploring some advanced functionalities of pointers.
 categories:
   - Code

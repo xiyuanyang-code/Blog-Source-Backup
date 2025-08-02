@@ -1,7 +1,7 @@
 ---
 title: Pre-training-Is-Dead?
 date: 2025-03-09 00:36:50
-index_img: /img/cover/pretraining.png
+index_img: /img/cover/pretraining.jpg
 excerpt: This blog focuses on the speech delivered by Ilya Sutskever in Neurips 2024, which discussed the future of scaling law and pre-training method, as well as the future directions of AI development.
 categories:
   - Artificial Intelligence

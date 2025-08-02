@@ -1,7 +1,7 @@
 ---
 title: Bash_commands
 date: 2025-02-17 13:07:33
-index_img: /img/cover/bash.png
+index_img: /img/cover/bash.jpg
 excerpt: This blog concisely introduces common Bash commands, including grep, awk and explains how to adhere to the core Linux philosophy "KISS principle" when automating file processing in Linux.
 categories:
   - Efficient Tools

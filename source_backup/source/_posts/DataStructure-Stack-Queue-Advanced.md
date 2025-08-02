@@ -1,7 +1,7 @@
 ---
 title: DataStructure-Stack-Queue-Advanced
 date: 2025-03-16 18:39:53
-index_img: /img/cover/increasingstack.png
+index_img: /img/cover/increasingstack.jpg
 excerpt: Several advanced usage of stack, including the increasing stack, increasing queue and the recursive simulation of stack.
 math: true
 categories:

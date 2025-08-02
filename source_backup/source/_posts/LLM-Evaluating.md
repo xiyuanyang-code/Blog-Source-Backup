@@ -1,7 +1,7 @@
 ---
 title: LLM Evaluating
 date: 2025-05-30 15:31:49
-index_img: /img/cover/llmeva.png
+index_img: /img/cover/llmeva.jpg
 excerpt: Initial try for LLM evaluating on gsm8k dataset.
 categories:
   - Artificial Intelligence

@@ -1,7 +1,7 @@
 ---
 title: Python-visualization
 date: 2025-03-14 14:09:52
-index_img: /img/cover/visualization.png
+index_img: /img/cover/visualization.jpg
 excerpt: Introducing Easily Used Templates to draw beautiful pictures in Python.
 categories:
   - Code

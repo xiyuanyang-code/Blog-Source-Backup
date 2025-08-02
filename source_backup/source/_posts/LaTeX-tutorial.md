@@ -1,7 +1,7 @@
 ---
 title: LaTeX-tutorial
 date: 2024-11-22 20:01:06
-index_img: /img/cover/LaTeX.png
+index_img: /img/cover/LaTeX.jpg
 excerpt: You will start with an Overleaf template and learn basic LaTeX commands, including text formatting, inserting figures, tables, hyperlinks, and citations, enabling you to handle LaTeX quickly.
 categories:
   - Efficient Tools

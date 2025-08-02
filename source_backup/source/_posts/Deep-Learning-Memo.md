@@ -1,7 +1,7 @@
 ---
 title: Deep Learning Memo
 date: 2025-03-10 19:22:02
-index_img: /img/cover/dpexperience.png
+index_img: /img/cover/dpexperience.jpg
 excerpt: This blog records the writer's learning process of building and training neural networks by hand practically, including some tips, insights and memos.
 math: true
 categories:

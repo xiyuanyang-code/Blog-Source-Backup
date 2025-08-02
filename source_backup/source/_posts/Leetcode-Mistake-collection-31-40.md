@@ -1,7 +1,7 @@
 ---
 title: Leetcode-Mistake-collection-31-40
 date: 2024-12-10 13:07:20
-index_img: /img/cover/Leetcode.png
+index_img: /img/cover/Leetcode.jpg
 excerpt: Leetcode-Mistake-Collection-Episode-4, focusing on advanced algorithm.
 categories:
   - Algorithm

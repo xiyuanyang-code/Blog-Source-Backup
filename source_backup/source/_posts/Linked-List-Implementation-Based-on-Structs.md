@@ -1,7 +1,7 @@
 ---
 title: Linked-List-Implementation-Based-on-Structs
 date: 2024-12-07 19:55:20
-index_img: /img/cover/lianbiao.png
+index_img: /img/cover/lianbiao.jpg
 excerpt: This blog starts from scratch to demonstrate how to implement a linked list data structure using structs, covering the basic operations including insertion, deletion, traversal, and searching.
 categories:
   - Code

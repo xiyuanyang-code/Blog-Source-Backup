@@ -5,7 +5,7 @@ excerpt: Basic introduction to CI&CD in software engineering, including demonstr
 tags: 
   - CI & CD
   - Workflow
-index_img: /img/cover/cicd.png
+index_img: /img/cover/cicd.jpg
 ---
 
 <style>

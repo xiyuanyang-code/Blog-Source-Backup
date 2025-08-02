@@ -1,7 +1,7 @@
 ---
 title: "Python Pipe & Functional Programming"
 date: 2025-07-03 16:32:43
-index_img: /img/cover/tuxwelcome.jpg
+index_img: /img/cover/pipe.jpg
 excerpt: The basic tutorial of using pipes in Python programming, including advanced usage. The blog also introduces the introduction of functional programming.
 categories:
   - Code

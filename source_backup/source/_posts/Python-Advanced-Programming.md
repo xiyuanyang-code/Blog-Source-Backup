@@ -1,7 +1,7 @@
 ---
 title: Python Pythonic
 date: 2025-07-16 12:15:17
-index_img: /img/cover/fp.jpg
+index_img: /img/cover/pythonic.jpg
 excerpt: This article introduces advanced Python programming concepts, including Pythonic style, metaprogramming, functional programming, and more.
 categories:
   - Code

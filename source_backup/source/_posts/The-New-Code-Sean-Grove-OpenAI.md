@@ -262,8 +262,25 @@ What we should do:
 
 Whenever you're working on your next AI feature, **start with a specification**. What do you actually expect to happen? What does the success criteria look like? Debate whether or not it's actually clearly written down and communicated. Make the spec executable. Feed the spec to the model and test against the spec.
 
+## Model Spec
+
+**OpenAI Model Spec**[^3] is a specification launched by OpenAI to align with user commands and model response.
+
+### General principles
+
+{% note primary %}
+- Maximizing helpfulness and freedom for our users: The AI assistant is fundamentally a tool designed to empower users and developers. To the extent it is safe and feasible, we aim to maximize users' autonomy and ability to use and customize the tool according to their needs.
+- Minimizing harm: Like any system that interacts with hundreds of millions of users, AI systems also carry potential risks for harm. Parts of the Model Spec consist of rules aimed at minimizing these risks. Not all risks from AI can be mitigated through model behavior alone; the Model Spec is just one component of our overall safety strategy.
+- Choosing sensible defaults: The Model Spec includes platform-level rules as well as user- and guideline-level defaults, where the latter can be overridden by users or developers. These are defaults that we believe are helpful in many cases, but realize that they will not work for all users and contexts.
+{% endnote %}
+
+For safety procedures, model spec designs different levels of authorities, including: **platform**, **developer**, **user** and **guideline**.  Instructions with higher authority override those with lower authority. This chain of command is designed to maximize steerability and control for users and developers, enabling them to adjust the model's behavior to their needs while staying within clear boundaries.
+
+
 ## References
 
 [^1]: [English is the best programming language](https://blog.almaer.com/english-will-become-the-most-popular-development-language-in-6-years/)
 
 [^2]: [Several Communications](https://x.com/dalmaer/status/1878796924998013362)
+
+[^3]: [Model Spec](https://model-spec.openai.com/2025-04-11.html)

@@ -12,6 +12,12 @@ tags:
   - Missing Semester
 ---
 
+<style>
+  html, body, .markdown-body {
+    font-family: Georgia, sans, serif;
+  }
+</style>
+
 # SSH Remote Host
 
 使用 `ssh` 和 `scp` 等工具实现服务器的远程连接（第一次体会到没有 sudo 权限的感觉）

@@ -15,17 +15,142 @@ tags:
     font-family: Georgia, sans, serif;
   }
 </style>
-<!--
- * @Author: Xiyuan Yang   xiyuan_yang@outlook.com
- * @Date: 2025-03-30 19:42:38
- * @LastEditors: Xiyuan Yang   xiyuan_yang@outlook.com
- * @LastEditTime: 2025-04-28 16:58:49
- * @FilePath: /Blog_posts_get/README.md
- * @Description: 
- * Do you code and make progress today?
- * Copyright (c) 2025 by Xiyuan Yang, All Rights Reserved. 
--->
+
 # Blog Update Fetching Script
+
+Source Code: [Github Repo](https://github.com/xiyuanyang-code/Blog-Update-Fetching-Script)
+
+## My Blog Updating Status
+
+<!-- BEGIN -->
+```text
+⏸️AI-Paper-2024
+✅AIBasis-Neural-Networks
+✅Above-All-ZH
+✅Above-All-en
+✅Agents-in-Coding-A-survey
+✅Algorithm-BFS-DFS
+✅Algorithm-BinaryTree
+✅Algorithm-Chunking
+✅Algorithm-Introduction
+✅Algorithm-MCTS
+✅Algorithm-Memo
+✅Algorithm-Sorting
+✅Announcement
+✅Automaton-NFA
+✅Bash-commands
+✅Bash-exercises
+✅Blog-Update-Fetching-Script
+✅Blog-Word-Counter
+✅C-plus-plus-Primer-Plus-tutorial
+✅CLI-Roadmap
+✅CMake-tutorial-episode2
+✅CMake-tutorial1
+✅CS294-1-LLM-Reasoning
+✅CS294-3-Autogen
+✅CamelAI-automatic-essay-modification
+✅Class-Inheritance
+✅Code-Line-Counter
+✅Code-Reuse-in-OOP
+✅DataStructure-AVL-Tree
+✅DataStructure-Awesome
+✅DataStructure-B-and-B-plus-Tree
+✅DataStructure-Disjoint-Set
+✅DataStructure-Fenwick-Tree
+✅DataStructure-Graph-AOE-and-AOV-Network
+✅DataStructure-Graph-Introduction
+✅DataStructure-Graph-MST-problem
+✅DataStructure-Graph-Mathematical-Basis
+❌DataStructure-Graph-Network-Flow-problem
+✅DataStructure-Graph-SCC
+✅DataStructure-Graph-SSSP-problem
+✅DataStructure-Hash-Table
+✅DataStructure-LCA
+✅DataStructure-LinearList
+✅DataStructure-Queue
+✅DataStructure-RBT-Tree
+✅DataStructure-Segment-Tree
+✅DataStructure-Set
+✅DataStructure-Sparse-Table
+✅DataStructure-Splay-Tree
+✅DataStructure-Stack
+✅DataStructure-Stack-Queue-Advanced
+✅DataStructure-String
+✅DataStructure-Tree
+✅DataStructure-Tree-Binary-Heap
+✅DataStructure-Tree-Binary-Search-Tree
+✅DataStructure-Tree-Binary-Tree
+✅DataStructure-Tutorial
+✅Deep-Learning-Memo
+✅Docker-Tutorial
+✅Dynamic-Memory-and-Classes
+✅Exception-Handling-in-C-plus-plus
+✅Factor-Mining-in-Quantitative-Investing-A-Survey
+✅Feishu-GPU-Auto-Monitoring
+⏸️Git-Advanced-Memo
+✅Imagenet
+✅Input-and-Output-in-C-plus-plus
+✅Introduction-to-OOP
+✅Javascripts-Advanced
+✅Javascripts-Memo
+✅Jotting-References-and-Encapsulation-in-OOP
+✅LLM-Evaluating
+✅LLM-Learning-Initial
+✅LLML-Attention
+✅LLML-CS336-Lecture-1-Overview-and-Tokenization
+⏸️LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
+✅LLML-Transformer
+✅LaTeX-tutorial
+✅Leetcode-Mistake-collection
+✅Leetcode-Mistake-collection-1-10
+✅Leetcode-Mistake-collection-11-20
+✅Leetcode-Mistake-collection-21-30
+✅Leetcode-Mistake-collection-31-40
+✅Life-musings
+✅Lightweight-speech-recognition-conversion-model
+✅Linked-List-Implementation-Based-on-Structs
+✅Linux-Bash-Introduction
+✅Math-Integral-Cheatsheet
+✅Missing-Semester-Notes
+✅Modern-C
+✅My-Bloging-Workflow
+✅My-Memo
+✅My-Multi-Agents
+✅My-Posts
+✅My-WorkFlow
+✅Pointers-Arrays-and-Functions
+✅Pre-training-Is-Dead
+✅Profiling-and-Debugging
+✅Python-Advanced-Programming
+✅Python-Architecture-Patterns
+✅Python-Architecture-Patterns-Multi-file-Progarmming
+✅Python-Environment-Modules-Tutorial
+✅Python-File-Management
+✅Python-Package-Manager
+✅Python-Pipe
+✅Python-Scraping-Tutorial
+✅Python-Threadings
+✅Python-cheatsheet
+✅Python-numpy-cheatsheet
+✅Python-visualization
+✅Pythonic-Functional-Programming
+✅Quick-GPT-A-fast-and-simple-CLI-LLM-calling-function
+✅RAG-Blog-Content-Retrieval
+✅RAG-tutorial
+⏸️RL-speeches
+✅Regular-Expression
+✅Rust-OwnerShip
+✅Secure-Shell-and-Encryption
+✅Taking-Notes
+✅Tools-Tutorial
+✅Torch-Memo-Tensor-Operations
+✅Torch-Memo-TensorBoard
+✅Torch-memo
+✅Vim-tutorial
+✅WSL-Proxy
+✅hello-world
+```
+<!-- END -->
 
 ## Introduction
 
@@ -147,8 +272,6 @@ Then, the file will compare the new status with the previous status stored in th
 Finally, the scripts will update `prev.txt` and generate a new blog status named `20250330_200559.txt` and you can see the updated status there!
 
 </details>
-
-
 
 
 ## Demo

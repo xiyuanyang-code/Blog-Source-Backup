@@ -2,7 +2,7 @@
 title: DataStructure-LCA
 date: 2025-04-10 12:34:06
 index_img: /img/cover/lca.jpg
-excerpt: Introduction to the LCA(lowest common ancestor) problem, including doubling algorithm and eulerian sequence.
+excerpt: Introduction to the LCA (lowest common ancestor) problem, including doubling algorithm and eulerian sequence.
 math: true
 hide: false
 categories:

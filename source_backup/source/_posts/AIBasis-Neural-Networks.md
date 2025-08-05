@@ -1,5 +1,5 @@
 ---
-title: AIBasis Neural Networks
+title: Neural Networks Introduction
 date: 2025-04-04 00:17:59
 index_img: /img/cover/NNintro.jpg
 excerpt: The Introduction for Blog Updating several classical neural network and its applications.
@@ -18,29 +18,34 @@ tags:
   }
 </style>
 
-# It is Neural Networks!
+# Introduction
 
-## Introduction
-
-在这个系列中，笔者将要介绍**深度学习中常见的网络结构**，同时，这也是作为**SJTU人工智能基础**的**常见网络结构**一章的学习笔记。
-
-I will call it **AINN-series**!
+Neural networks have played a foundational role in the field of deep learning and serve as one of the theoretical bases for many modern mainstream models. This blog will serve as a directory, systematically documenting the research process related to neural networks.
 
 ## Table of Contents
 
-- **MLP (Multilayer perceptron)**
-- **Convolutional Neural Networks**
-	- For this passage, you can see [This Blog](https://xiyuanyang-code.github.io/posts/Imagenet/) for more information! (Including Alexnet, Googlenet and AlexNet...)
-	- We will focus more on the mathematical principle of CNNs in this Blog.😊
-- **Recurrent Neural Networks**
-	- **Long Short-Term Memory network**
-- **Graph Neural Networks**
-- **Generative Adversarial Networks (GAN)**
-- **Diffusion Model**
-- **Transformer** (Mostly Focused!)
+- Linear Regression
 
-## Abstract
+- MLP (MultiLayer Perceptron)
 
-The abstract for every blog in this session.
+- Convolutional Neural Network ✅
 
-### AINN-GAN
+  - [Blog](https://xiyuanyang-code.github.io/posts/Imagenet/)
+
+- Recurrent Neural Network
+
+- Graph Neural Network
+
+- GAN (Generative Adversarial Network)
+
+- Diffusion Model
+
+- Attention Mechanism ✅
+
+  - [Blog for Transformer](https://xiyuanyang-code.github.io/posts/LLML-Transformer/)
+
+  - [Blog for Attention Mechanism](https://xiyuanyang-code.github.io/posts/LLML-Attention/)
+
+## Resources
+
+All the source code will be open-sourced in [This Github Repo](https://github.com/xiyuanyang-code/Torch_Memo), to be refactored.

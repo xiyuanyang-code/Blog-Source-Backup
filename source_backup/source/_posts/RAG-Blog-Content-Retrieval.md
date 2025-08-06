@@ -1,7 +1,7 @@
 ---
 title: RAG-Blog-Content-Retrieval
 date: 2025-03-29 20:20:20
-index_img: /img/cover/retrieval.jpg
+index_img: /img/cover/RAG.jpg
 excerpt: My Github project RAG Blog content retrieval
 categories:
   - Project

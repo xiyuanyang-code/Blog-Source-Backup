@@ -1,7 +1,7 @@
 ---
 title: DataStructure-Stack
 date: 2024-12-19 10:06:53
-index_img: /img/cover/Stack2.jpg
+index_img: /img/cover/stackoverflow.jpg
 excerpt:  This article introduces Stack, including the sequential implementation and the linked implementation. Then the article introduces the usage of Stack in C++ STL, with several applications.
 categories:
   - Algorithm

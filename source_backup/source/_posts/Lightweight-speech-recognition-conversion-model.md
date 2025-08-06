@@ -1,7 +1,7 @@
 ---
 title: Lightweight-speech-recognition-conversion-model
 date: 2025-01-29 22:04:15
-index_img: /img/cover/git.jpg
+index_img: /img/cover/vosk.jpg
 excerpt: My Github project - A Vosk-based Chinese-English bilingual speech recognition Python Application.
 categories:
   - Project

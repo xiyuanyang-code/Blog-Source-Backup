@@ -87,7 +87,6 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅DataStructure-Graph-AOE-and-AOV-Network
 ✅DataStructure-Graph-Introduction
 ✅DataStructure-Graph-MST-problem
-✅DataStructure-Graph-Mathematical-Basis
 ❌DataStructure-Graph-Network-Flow-problem
 ✅DataStructure-Graph-SCC
 ✅DataStructure-Graph-SSSP-problem
@@ -97,7 +96,6 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅DataStructure-Queue
 ✅DataStructure-RBT-Tree
 ✅DataStructure-Segment-Tree
-✅DataStructure-Set
 ✅DataStructure-Sparse-Table
 ✅DataStructure-Splay-Tree
 ✅DataStructure-Stack
@@ -169,6 +167,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Rust-OwnerShip
 ✅Secure-Shell-and-Encryption
 ✅Taking-Notes
+✅The-New-Code-Sean-Grove-OpenAI
 ✅Tools-Tutorial
 ✅Torch-Memo-Tensor-Operations
 ✅Torch-Memo-TensorBoard

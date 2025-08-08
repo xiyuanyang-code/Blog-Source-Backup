@@ -45,7 +45,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 
 <!-- BEGIN -->
 ```text
-⏸️AI-Paper-2024
+🫡AI-Paper-2024
 ✅AIBasis-Neural-Networks
 ✅Above-All-ZH
 ✅Above-All-en
@@ -57,7 +57,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Algorithm-MCTS
 ✅Algorithm-Memo
 ✅Algorithm-Sorting
-⏸️Andrew-Ng-Building-Faster-with-AI
+✅Andrew-Ng-Building-Faster-with-AI
 ✅Announcement
 ✅Automaton-NFA
 ✅Bash-commands
@@ -107,7 +107,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Exception-Handling-in-C-plus-plus
 ✅Factor-Mining-in-Quantitative-Investing-A-Survey
 ✅Feishu-GPU-Auto-Monitoring
-⏸️Git-Advanced-Memo
+🫡Git-Advanced-Memo
 ✅Imagenet
 ✅Input-and-Output-in-C-plus-plus
 ✅Introduction-to-OOP
@@ -118,7 +118,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅LLM-Learning-Initial
 ✅LLML-Attention
 ✅LLML-CS336-Lecture-1-Overview-and-Tokenization
-⏸️LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
+🫡LLML-CS336-Lecture-2-Pytorch-Resource-Accounting
 ✅LLML-Transformer
 ✅LaTeX-tutorial
 ✅Leetcode-Mistake-collection
@@ -157,7 +157,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Quick-GPT-A-fast-and-simple-CLI-LLM-calling-function
 ✅RAG-Blog-Content-Retrieval
 ✅RAG-tutorial
-⏸️RL-speeches
+🫡RL-speeches
 ✅Regular-Expression
 ✅Rust-OwnerShip
 ✅Secure-Shell-and-Encryption

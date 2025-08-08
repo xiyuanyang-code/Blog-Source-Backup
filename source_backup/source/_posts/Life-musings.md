@@ -262,8 +262,8 @@ AI Coding Assistant?
 - Language is the bound of communication and philosophy.
 
 - Tech Stack is less important as well, but we still need it! **Efficiency** is the only measurement for the AI era, great efficiency means the great tools.
-
-- You need to transform these important abilities:
+p
+- You need to transform these important abilities:k
 
   - Fanaticism （狂热）
   - Logic from Math （数理）

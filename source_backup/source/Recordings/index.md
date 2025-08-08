@@ -494,4 +494,11 @@ After entering university, the author realized that the new knowledge to be lear
   - **挑战杯**: 技术文档的负责部分内容完成 & 通过验收！
   - **Celebrity Speech**: Celebrity Speech for Andrew Ng, regarding AI Coding and AI developing
   - **量化**：最终敲定 pipeline，搞清楚全过程的逻辑链条，开始初步代码组装
+
+- `2025/08/08`:
+  - **挑战杯**：完成技术文档的小调优
+  - **量化**：组装好数据预处理的基本代码 & 跑通回测信息
+  - **讲座**：吴恩达讲座 & 一席讲座 for AI and Agent in the future
+  - **Missing Semester**：Dive deep into Git for advanced features.
+
 </div>

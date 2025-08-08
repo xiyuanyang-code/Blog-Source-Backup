@@ -91,16 +91,24 @@ One other pattern I’ve seen, if every piece of new data causes you to pivot, i
 
 {% endnote %}
 
+- **The concrete idea** let you goes faster! AI coding assistant do the grunt work. (For example, how to remove the all NaN files using Python scripts? You can use AI to solve this, for it is testable and easy for AI but hard and needs a lot of time-consumption and memorization for human coders.)
+
+- Vague is always correct but not useful
+
+- Features are also a typing of making decisions.
+
+
+
 ### Building Faster with AI Coding Assistance
 
 {% note primary %}
 
 
-In order to go faster, the other thing I often think about is the built feedback loop, which is rapidly changing when it comes to how we build with AI coding assistance. So when you’re building a lot of applications, one of the biggest risks is customer acceptance. A lot of startups struggle not because we can’t build whatever we want to build, but because we build something and it turns out nobody cares.
+In order to go faster, the other thing I often think about is the **built feedback loop**, which is rapidly changing when it comes to how we build with AI coding assistance. So when you’re building a lot of applications, one of the biggest risks is customer acceptance. A lot of startups struggle not because we can’t build whatever we want to build, but because we build something and it turns out nobody cares.
 
-For a lot of the way I build startups, especially applications, less so deep tech, less so technology startups, but definitely application startups, is we often build software so there’s an engineering task and then we will get feedback from users and there’s a product management task and then we’ll go back, then based on the user feedback, we’ll tweak our views on what to build, go back to write more software and we go around this loop many, many times, iterate to what product market fits.
+For a lot of the way I build startups, especially applications, less so deep tech, less so technology startups, but definitely application startups, is we often build software so there’s an engineering task and then we will get feedback from users and there’s a **product management** task and then we’ll go back, then based on the user feedback, we’ll tweak our views on what to build, go back to write more software and we go around this loop many, many times, iterate to what product market fits.
 
-It turns out that with AI coding assistance, which Andrei talked about as well, rapid engineering is becoming possible in a way that just was not possible. It’s becoming much more feasible. So the speed of engineering is going up rapidly and the cost of engineering is also going down rapidly. This changes the mechanisms by which we drive startups around this loop.
+It turns out that with AI coding assistance, which Andrei talked about as well, rapid engineering is becoming possible in a way that just was not possible. It’s becoming much more feasible. So **the speed of engineering is going up rapidly and the cost of engineering is also going down rapidly**. This changes the mechanisms by which we drive startups around this loop.
 
 {% endnote %}
 
@@ -137,7 +145,7 @@ I think Cloud Code Codex is a new generation of highly agentic coding assistants
 
 One surprising thing is, we’re used to thinking of code as this really valuable artifact because it’s so hard to create. But because the cost of software engineering is going down, code is much less of a valuable artifact as it used to. So I’m on teams where we’ve completely rebuilt the code base three times in the last month, right? Because it’s not that hard anymore to just completely rebuild the code base, pick a new data schema, it’s fine. Because the cost of doing that has plummeted.
 
-Some of you may have heard of Jeff Bezos’ terminology of a two-way door versus a one-way door. A two-way door is a decision that you can make. If you change your mind, come back out, you know, reverse it relatively cheaply. Whereas a one-way door is you make a decision and you change your mind, it’s very costly, very difficult to reverse.
+Some of you may have heard of Jeff Bezos’ terminology of **a two-way door versus a one-way door**. A two-way door is a decision that you can make. If you change your mind, come back out, you know, reverse it relatively cheaply. Whereas a one-way door is you make a decision and you change your mind, it’s very costly, very difficult to reverse.
 
 So choosing the software architecture of your tech stack used to be a one-way door. Once you’ve built on top of a certain tech stack, you know, set a database schema, really hard to change it. So that used to be a one-way door. I don’t want to say it’s totally a two-way door, but I find that my team will more often build on a certain tech stack. A week later, change your mind, let’s throw the code base away and redo it from scratch on a new tech stack.
 
@@ -156,6 +164,11 @@ In contrast, I don’t know art history, and so when I prompt image generation, 
 I think with computers, one of the most important skills of the future is the ability to tell a computer exactly what you want so they will do it for you. It will be people that have that deeper understanding of computers that will be able to command a computer to get the outcome you want, and learning to code, not that you need to write the code yourself, see an AI to code for you, seems like it would be the best way to do that for a long time.
 
 {% endnote %}
+
+AI Coding makes developing more like a "two-way door", it enables programmers to rebuild and refactor their codebases more easily, with less cost and more efficiency.
+
+Moreover, the basic prototype for product manager and programmers will remain the same (Ai will not replace programmers in the predictable future), however, **the ratio will change**. The job that product manager do will become a bottleneck for the software developing, e.g. how to find a new feature, how to design the overall artifacts for a complex system or projects. We will see more and more product manager in the future!
+
 
 ### Shifting Dynamics in Product Management
 
@@ -192,7 +205,17 @@ We often sit down and think, “gee, I thought, you know, this product name will
 
 {% endnote %}
 
-### Understanding AI Accelerates Progress
+- For myself for getting quick feedback
+
+- Ask 3 friends or teammates
+
+- Ask 3-10 strangers.
+
+Less accuracy but more speed..
+
+**Using A/B test**, but not with intent.
+
+### The importance of technical understanding
 
 {% note primary %}
 All right, so we talked about concrete ideas, speed up engineering, speed up product feedback. This is one last thing I want to touch on, which is, I’ve seen that understanding AI actually makes you go faster, and here’s why. As an AI person, maybe I’m biased to be pro-AI, but I want to share with you why.
@@ -209,7 +232,11 @@ One thing I’ve been surprised by: it turns out if you have two possible archit
 
 {% endnote %}
 
-### Building with AI Building Blocks
+- The mature of job like HR and other job roles, the knowledge of how to do that is quite confuse.
+
+- **A deep understanding of AI is a differentiator**.
+
+### Building with AI Building Blocks: About AI tools
 
 {% note primary %}
 The other reason why I find sitting on top of AI really helpful for startups is, over the last two years, we have just had a ton of wonderful Gen-AI tools, or Gen-AI building blocks. A partial list includes prompting, agentic workflows, evals, guardrails, RAG, voice stack, async programming, lots of ETL, embeddings, fine-tuning, GraphDB, how to compute used, MCP, using models. Just a long and wonderful list of building blocks that you can quickly combine to build software that no one on the planet could have built even a year ago. And this creates a lot of new opportunities for startups to build new things.
@@ -219,6 +246,18 @@ When I learned about these building blocks, this is actually a picture that I ha
 So knowing all these wonderful building blocks lets you combine them in a much richer combination. One thing that DeepLearning.AI does, I actually take a lot of DeepLearning.AI short courses myself, because I work with all the leading AI companies in the world and try to hand out building blocks. But when I look at the DeepLearning.AI course catalog, this is actually what I see. And whenever I take new courses and learn these building blocks, I feel like I’m getting new things that can combine to form kind of combinatorially or exponentially more software applications that were not possible just one or two years ago.
 
 {% endnote %}
+
+Tools are coding blocks. (prompting, agentic workflows, evals, guardrails, RAG, voice stack, async programming, lots of ETL, embeddings, fine-tuning, GraphDB, how to compute used, MCP, reasoning models)
+
+The more blocks you yield, the more software apps you can create!
+
+> But use one block deeply is more useful than knowing how to use mountains of blocks just at the interface level.
+
+[DeepLearning AI](https://www.deeplearning.ai/) is a great course for building blocks with high quality videos.
+
+- [geeksforgeeks](https://www.geeksforgeeks.org/)
+
+- [freecodecamp](https://www.freecodecamp.org/news/)
 
 ### Conclusion
 
@@ -235,7 +274,7 @@ And some things we’ve learned to get you speed is, work on concrete ideas. It�
 {% note success %}
 AUDIENCE QUESTION: I have a couple of quick questions. As AI advances, do you think it’s more important for humans to develop the tools or learn how to use the tools better? How can we position ourselves to remain essential in a world where intelligence is becoming democratized?
 
-ANDREW NG: I feel like AGI has been overhyped. And so for a long time, there’ll be a lot of things that humans can do that AI cannot. And I think in the future, the people that are most powerful are the people that can make computers do exactly what you want it to do. And so I think staying on top of the tools, some of us will build tools sometimes, but there are a lot of other tools that others will build that we can just use. But people that know how to use AI to get computers to do what you want it to do will be much more powerful. Not worry about people running out of things to do, but people that can use AI will be much more powerful than people that don’t.
+ANDREW NG: I feel like AGI has been overhyped. And so for a long time, there’ll be a lot of things that humans can do that AI cannot. And I think in the future, **the people that are most powerful are the people that can make computers do exactly what you want it to do**. And so I think staying on top of the tools, some of us will build tools sometimes, but there are a lot of other tools that others will build that we can just use. But people that know how to use AI to get computers to do what you want it to do will be much more powerful. Not worry about people running out of things to do, but people that can use AI will be much more powerful than people that don’t.
 
 {% endnote %}
 
@@ -245,13 +284,15 @@ AUDIENCE QUESTION: So, first of all, thank you so much. I have a huge respect fo
 
 ANDREW NG: There’s something I was debating what I wanted to say in response to the last question about kind of AGI. Maybe I’ll answer this and go over the last question.
 
+> Hype: 炒作
+
 So it turns out there’s one framework you can use for deciding what’s hyped and what’s not hyped. I think over the last two years, there’s been a handful of companies that hyped up certain things for promotional, PR, fundraising, influence purposes. And because AI was so new, a handful of companies got away with saying almost anything without anyone fact-checking them because the technology was not understood.
 
-So one of my mental filters is there’s certain hype narratives that make these businesses look more powerful that’s been amplified. And so for example, this idea that AI is so powerful, we might accidentally lead to human extinction. That’s just ridiculous. But it is a hype narrative that made certain businesses look more powerful and it got ramped up and actually helped certain businesses’ fundraising goals.
+So one of my mental filters is there’s certain hype narratives that make these businesses look more powerful that’s been amplified. And so for example, **this idea that AI is so powerful, we might accidentally lead to human extinction. That’s just ridiculous**. But it is a hype narrative that made certain businesses look more powerful and it got ramped up and actually helped certain businesses’ fundraising goals.
 
 AI is so powerful soon no one will even have a job anymore. That’s not true, right? But again, that made these businesses look more powerful, got hyped up. Or we are so powerful, so went the hype narrative, we’re so powerful that by training a new model, we will casually wipe out thousands of startups. That’s just not true. Yes, Jasper ran into trouble, a small number of companies got wiped out, but it’s not that easy to casually wipe out thousands of startups.
 
-AI needs so much electricity, only nuclear power is good enough for that. That wind, solar stuff, this is not true. So I think a lot of these GPUs in space, I don’t know, go for it. I think we have a lot of room to run still for terrestrial GPUs. But I think some of these hype narratives have been amplified that I think are a distortion of what actually will be done.
+AI needs so much electricity, only nuclear power is good enough for that. That wind, solar stuff, this is not true. So I think a lot of these GPUs in space, I don’t know, go for it. I think we have a lot of room to run still for terrestrial GPUs. But **I think some of these hype narratives have been amplified that I think are a distortion of what actually will be done**.
 
 {% endnote %}
 
@@ -261,7 +302,9 @@ AUDIENCE QUESTION: There’s a lot of hype in AI and nobody’s really certain a
 
 I think the dangerous AI narrative has been overhyped. AI is a fantastic tool, but it’s like any other powerful tool, like electricity, lots of ways to use it for beneficial purposes, also some ways to use it in harmful ways. I find myself not using the term AI safety that much, not because I think we should build dangerous things, but because I think safety is not a function of technology, it’s a function of how we apply it.
 
-So like electric motor, you know, you can’t, the maker of electric motor can’t guarantee that no one will ever use it for an unsafe downstream task, like using electric motor can be used to build a Dallas machine, electric vehicle, can be used to build a smart bomb, but the electric motor manufacturer can’t control how it’ll be used downstream. So safety is not a function of the electric motor, it’s a function of how you apply it.
+So like electric motor, you know, you can’t, **the maker of electric motor can’t guarantee that no one will ever use it for an unsafe downstream task**, like using electric motor can be used to build a Dallas machine, electric vehicle, can be used to build a smart bomb, but the electric motor manufacturer can’t control how it’ll be used downstream. So safety is not a function of the electric motor, it’s a function of how you apply it.
+
+> AI 的安全性取决于 AI 的使用方式。
 
 And I think the same thing for AI. AI is neither safe nor unsafe. It is how you apply it that makes it safe or unsafe. So instead of thinking about AI safety, I often think about responsible AI because it’s how we use it responsibly, hopefully, or irresponsibly that determines whether or not what we build with AI technology ends up being harmful or beneficial.
 
@@ -271,9 +314,9 @@ And I feel like sometimes the really weird corner cases, they get hyped up in th
 
 {% note success %}
 
-AUDIENCE QUESTION: Thank you for your work. I think your impact is remarkable. My question is, as aspiring founders, how should we be thinking about business in the world where anything can be disrupted in a day? Whatever great mode, product, or feature you have can be replicated with vibe code and competitors and basically ours.
+AUDIENCE QUESTION: Thank you for your work. I think your impact is remarkable. My question is, as aspiring founders, how should we be thinking about business in the world where anything can be disrupted in a day?**Whatever great mode, product, or feature you have can be replicated with vibe code and competitors and basically ours.**
 
-ANDREW NG: It turns out when you start a business, there are a lot of things to worry about. The number thing I worry about is, are you building a product that users love? It turns out that when you build a business, there are lots of things to think about. Go-to-market, channel, competitors, technology, mode, all that is important. But if I were to have a singular focus on one thing, it is, are you building a product that users really want? Until you solve that, it’s very difficult to build a valuable business.
+ANDREW NG: It turns out when you start a business, there are a lot of things to worry about. The number thing I worry about is, are you building a product that users love? It turns out that when you build a business, there are lots of things to think about. Go-to-market, channel, competitors, technology, mode, all that is important. But if I were to have a singular focus on one thing, it is, **are you building a product that users really want**? Until you solve that, it’s very difficult to build a valuable business.
 
 After you solve that, the other questions do come to play. Do you have a channel to get the customers? What is pricing long-term? What is your moat? I find that moats tend to be overhyped, actually. I find that more businesses tend to start off with a product and then evolve eventually into a moat. But consumer products’ brand is somewhat more defensible and if you have a lot of momentum, it becomes harder to catch you. But enterprise products, sometimes if you have a, maybe moat is more of a consideration if there are channels that are hard to get into enterprises.
 
@@ -294,12 +337,13 @@ And for the teams I’m on, where we were lucky enough that users made our token
 
 And then what I’m seeing is that I’m seeing a lot of agentic workflows that actually integrate a lot of different steps. So, for example, if you build a customer service chatbot, we’ll often have to use prompting, maybe optimize some of the results in DSPy, build evals, build guardrails. Maybe the customer service chatbot needs RAG a part of the way to get information to feedback to the user. So, I actually do see these things grow.
 
-But one tip for many of you as well is I will often architect my software to make switching between different building block providers relatively easy. So, for example, I have a lot of products that build on top of OMs, but sometimes they point to a specific product and ask me, which OM are we using? I honestly don’t know, because we’ll build up evals, and when there’s a new model that’s released, we’ll quickly run evals to see if the new model is better than the old one. And then just switch to the new model or the new model that’s better on evals.
+But one tip for many of you as well is I will often architect my software to **make switching between different building block providers relatively easy**. So, for example, I have a lot of products that build on top of OMs, but sometimes they point to a specific product and ask me, which OM are we using? I honestly don’t know, because we’ll build up evals, and when there’s a new model that’s released, we’ll quickly run evals to see if the new model is better than the old one. And then just switch to the new model or the new model that’s better on evals.
 
 And so the model we use week by week, sometimes our agents will change it without even bothering to tell me because the evals show the new model works better. So, it turns out that switching costs for foundation models is relatively low, and we often architect our software. Oh, AIC, there’s an open sourcing that my friends and I worked on to make switching easier. Switching costs for the orchestration platforms is a little bit harder, but I find that preserving that flexibility in your choice of building blocks often lets you go faster, even if you’re building more and more things on top of each other. So, hope that helps.
 
-{% endnote %}
+> But models are products! It is an interesting problem.
 
+{% endnote %}
 
 {% note success %}
 
@@ -341,3 +385,27 @@ So one of the dangers, the inequality as well, is that these regulatory, awful r
 So I think so long as we prevent this line of attack on open source, open weight models from succeeding, and we’ve made good progress, but the threat is still there, then I think eventually we’ll get to the diffusion of knowledge and we can hopefully then bring everyone with us. But this fight to protect open source, we’ve been winning, but the fight is still on and we still have to keep up that work to protect open source.
 
 {% endnote %}
+
+## Conclusion
+
+AI Coding Assistant?
+
+- Most of the people do not know how ti use AI in a proper way. Tha lack of AI usage capability still exists.
+
+- The Core principle and core capabilities makes no changes.
+
+- **Memorization is less important in the era of AI**, for AI will handle those stuffs and grunt work. (For example, the boss don't need to capture all the details of the product, instead, it needs to capture the market and the future development, which is critical to the development)
+
+- Language is the bound of communication and philosophy.
+
+- Tech Stack is less important as well, but we still need it! **Efficiency** is the only measurement for the AI era, great efficiency means the great tools.
+
+- You need to transform these important abilities:
+
+  - Fanaticism （狂热）
+  - Logic from Math （数理）
+  - Creation （创造）
+
+The pyramids below are borrowed from [This lecture](https://yixi.tv/#/speech/detail?id=1352)
+
+![The new pyramid in the AI era](https://s1.imagehub.cc/images/2025/08/08/2ed9375467d09c0cf478702610c4978c.jpg)

@@ -41,12 +41,6 @@ See [Status](#Status) for the updating status for all Blogs!
 
 ### Status
 
-{% note success %}
-
-Upd: 2025.5.9 (Last Update Time)
-
-{% endnote %}
-
 Want to Update your own Blog Post status as well? See [this repo](https://github.com/xiyuanyang-code/Blog-Update-Fetching-Script) for all the source code!
 
 <!-- BEGIN -->
@@ -63,6 +57,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Algorithm-MCTS
 ✅Algorithm-Memo
 ✅Algorithm-Sorting
+⏸️Andrew-Ng-Building-Faster-with-AI
 ✅Announcement
 ✅Automaton-NFA
 ✅Bash-commands

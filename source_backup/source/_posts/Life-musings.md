@@ -236,3 +236,41 @@ We offer no explanation as to why these architectures seem to work; we attribute
 
 {% endnote %}
 
+## 2025.8.8
+
+好久没有更新 Life Musing 了。
+最近看到一篇一席的演讲：[AI时代的错位竞争: 高考最看重的能力，成了AI时代最不重要的能力](https://yixi.tv/#/speech/detail?id=1352)
+
+其实不仅高考，我们在学习知识的过程中，究竟收获到了什么？看似是极为高深的知识和理论，但是**绝大部分都是随着时间而不断消散的记忆**。不过**记忆**仍然是有用的，人类社会的一切活动几乎都建立在“记忆”的基础之上，一个人掌握了记忆的能力，记忆住了足够多的东西，就足以获得一份工作，在这个社会生存下去。
+
+但是**仅仅有记忆是不够的**，为什么大学一门课上下来过了一个暑假感觉脑子中的记忆在慢慢流失，这种流失不是知识的内化和自主吸收——这是一个极为痛苦的过程，需要特定的训练、外力的监督和干预，而是**遗忘**。因为我们学习到的，只是记忆，一种广义上的记忆的能力。
+
+**教育，就是当你把这门课真正忘记之后，还记得的内容**。这些内容更加的抽象，虚无，甚至无法言说，使用语言传递，但是这才是知识的精髓所在，这才是“百科全书”和大师之间的差距所在。
+
+在 AI 时代，“记忆”的能力被再一步弱化了，忘记了一条命令行的命令，不需要再去查百科全书，直接甩给AI他就能直接给你答案，但是有关命令行的“小即是美”哲学思想？It is the true essence of The Art of Command Line.
+
+{% note primary %}
+
+AI Coding Assistant?
+
+- Most of the people do not know how ti use AI in a proper way. Tha lack of AI usage capability still exists.
+
+- The Core principle and core capabilities makes no changes.
+
+- **Memorization is less important in the era of AI**, for AI will handle those stuffs and grunt work. (For example, the boss don't need to capture all the details of the product, instead, it needs to capture the market and the future development, which is critical to the development)
+
+- Language is the bound of communication and philosophy.
+
+- Tech Stack is less important as well, but we still need it! **Efficiency** is the only measurement for the AI era, great efficiency means the great tools.
+
+- You need to transform these important abilities:
+
+  - Fanaticism （狂热）
+  - Logic from Math （数理）
+  - Creation （创造）
+
+The pyramids below are borrowed from [This lecture](https://yixi.tv/#/speech/detail?id=1352)
+
+![The new pyramid in the AI era](https://s1.imagehub.cc/images/2025/08/08/2ed9375467d09c0cf478702610c4978c.jpg)
+
+{% endnote %}

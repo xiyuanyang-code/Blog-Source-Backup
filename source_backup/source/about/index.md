@@ -13,6 +13,8 @@ Greetings! I am **Xiyuan Yang (杨希渊)**, currently pursuing an undergraduate
 
 **My resume**: [My resume](https://xiyuanyang-code.github.io/resume/)
 
+- Resume Releases: [My Resume (PDF Version)](https://github.com/xiyuanyang-code/resume/releases/latest/download/XiyuanYang-Resume.pdf)
+
 **My email:**
 
 - [xiyuan__yang@outlook.com](mailto:xiyuan__yang@outlook.com)

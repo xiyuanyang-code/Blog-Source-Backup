@@ -107,7 +107,7 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Exception-Handling-in-C-plus-plus
 ✅Factor-Mining-in-Quantitative-Investing-A-Survey
 ✅Feishu-GPU-Auto-Monitoring
-🫡Git-Advanced-Memo
+✅Git-Advanced-Memo
 ✅Imagenet
 ✅Input-and-Output-in-C-plus-plus
 ✅Introduction-to-OOP

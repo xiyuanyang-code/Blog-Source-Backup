@@ -32,4 +32,6 @@ date: 2025-07-25 12:50:48
     - `2025/07/31`- `2025/08/05`: Busy on the project of GUI-Agent! Reading the survey and several technical reports for several main GUI-Agents, including UITARS from bytedance, Qwen-vl, etc. (See the upcoming blog)
 
     - `2025/08/06` - `2025/08/07`: Still focusing on GUI-Agent! It is a fascinating work!
+
+    - `2025/8/16`: This section will continue updating from tomorrow :), currently working on developing projects...
 </div>

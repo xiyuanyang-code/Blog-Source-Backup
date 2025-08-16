@@ -501,4 +501,11 @@ After entering university, the author realized that the new knowledge to be lear
   - **讲座**：吴恩达讲座 & 一席讲座 for AI and Agent in the future
   - **Missing Semester**：Dive deep into Git for advanced features.
 
+- `2025/08/09` ~ `2025/08/16`:
+  - **挑战杯**：技术文档通过终审 & 挑战杯 PPT 制作 & 技术文档英文版翻译
+  - **量化**：组建并重构 Transformer 模型 & 构建回测 Pipeline
+  - **CodingAgent**: 完成彻头彻尾的重构，实现第一个可运行版本！
+  - **ToolBox**: 接入 Vibe Coding 技术栈，并完成 MyToolZoo 项目
+  - **讨论**: Discussing the plan for the next semester
+
 </div>

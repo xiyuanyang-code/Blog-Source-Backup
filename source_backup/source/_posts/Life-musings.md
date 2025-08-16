@@ -274,3 +274,10 @@ The pyramids below are borrowed from [This lecture](https://yixi.tv/#/speech/det
 ![The new pyramid in the AI era](https://s1.imagehub.cc/images/2025/08/08/2ed9375467d09c0cf478702610c4978c.jpg)
 
 {% endnote %}
+
+## 2025.8.16
+
+突然发现自己一周多没更新博客了，这很不好。
+让思维留痕，并时不时地回头看看，也能在思忖中得到顿悟的 Aha Moment。
+
+突然发现自己踏入编程的殿堂也已经有一年多了，[A year of programming](https://xiyuanyang-code.github.io/posts/One-year-of-Programming/)

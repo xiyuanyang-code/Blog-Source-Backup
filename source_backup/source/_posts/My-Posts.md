@@ -137,7 +137,9 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅My-Memo
 ✅My-Multi-Agents
 ✅My-Posts
+✅My-ToolZoo
 ✅My-WorkFlow
+✅One-year-of-Programming
 ✅Pointers-Arrays-and-Functions
 ✅Pre-training-Is-Dead
 ✅Profiling-and-Debugging

@@ -508,4 +508,11 @@ After entering university, the author realized that the new knowledge to be lear
   - **ToolBox**: 接入 Vibe Coding 技术栈，并完成 MyToolZoo 项目
   - **讨论**: Discussing the plan for the next semester
 
+
+- `2025/08/17` - `2025/08/19`:
+  - **CodingAgent**：产品迭代升级至 version `0.2.0`，并且确定最终清晰的技术路线，画好图和写好文档。
+  - **AutoEmailSender**：完成第一个可运行版本 & 构建成熟 pipeline
+  - **CS336**：完成第二课的学习 & 开始第三课的学习
+  - Deep Learning: 回顾并完成对 MLP 和 SGD 等相关基础概念的数学推导。
+
 </div>

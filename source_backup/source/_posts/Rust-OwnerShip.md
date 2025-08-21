@@ -1,10 +1,11 @@
 ---
-title: Rust-OwnerShip
-date: 2025-04-19 00:37:43
+title: 'Rust Tutorial 2: Rust Ownership'
+date: 2025-08-21 23:22:43
 index_img: /img/cover/rust.jpg
 excerpt: This Blog focuses on the ownership of Rust.
 categories:
   - Code
+  - Rust
 tags:
   - tutorial
   - Finished

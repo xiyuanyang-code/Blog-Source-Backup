@@ -20,10 +20,14 @@ tags:
 
 # It is time to learn Rust!
 
-Github Repo: [Rust Learning](https://github.com/xiyuanyang-code/Rust-Learning)
+- Github Repo: [Rust Learning](https://github.com/xiyuanyang-code/Rust-Learning)
+
+- Learning Resources: [Rust Programming Language: Official Docs](https://doc.rust-lang.org/book/)
 
 ## Table of Contents
 
-- `2025/08/20`: Finish Rust package update & Start learning Chapter 1 & 2
+- `2025/08/20`: Finish Rust package update & Start learning Chapter 1 & 2.
 
 - `2025/08/21`: Finish reviewing the basic concepts of rust, including variables, functions, etc.
+
+- `2025/08/22`: Reviewing the OwnerShip of Rust.

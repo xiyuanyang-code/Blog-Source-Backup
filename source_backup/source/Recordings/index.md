@@ -515,4 +515,9 @@ After entering university, the author realized that the new knowledge to be lear
   - **CS336**：完成第二课的学习 & 开始第三课的学习
   - Deep Learning: 回顾并完成对 MLP 和 SGD 等相关基础概念的数学推导。
 
+- `2025/08/20` - `2025/08/21`:
+  - **开发**：优化 AutoEmailSender
+  - **CS336**：学习第三课：Hyperparameter & Architecture
+  - **Rust**：开始 Rust 学习并复习之前学习的前五章的内容 
+
 </div>

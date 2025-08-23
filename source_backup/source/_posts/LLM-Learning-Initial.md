@@ -162,6 +162,18 @@ All the code will be refactored and categorized into [LLM Learn](https://github.
 
     - Finish tutorial for basic Attention mechanism and Transformer Structure.
 
+- `2025/08/23`: Finish the first three course for CS336 Building large language models from scratch
+    - Lecture1: The course overview & word embeddings
+    - Lecture2: resource accounting & Pytorch basics (some fancy techniques)
+    - Lecture3: Different variants on transformer architectures, some tricks on hyperparameter and stable training
+    - **Learning Plan adjusting!**: For CS 336 is a bit hard for advanced techniques, we will first learn some lessons on CS224n, focusing on **training**.
+        - Unofficial Course Website: [Course on bilibili](https://www.bilibili.com/video/BV1vQMBz6EvP?spm_id_from=333.788.videopod.episodes&vd_source=6955add1d28c52cd48096d58e09ce798&p=15)
+        - Week5: Pre-Training
+        - Week6: Post-Training
+        - Optional: [Hugging Face Tutorial](https://www.youtube.com/watch?v=b80by3Xk_A8&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4&index=21)
+        - Optional: [MultiModel DeepLearning](https://www.youtube.com/watch?v=5vfIT5LOkR0&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4&index=22)
+        - Optional: [Model Interpretability & Editing](https://www.youtube.com/watch?v=cd3pRpEtjLs&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4&index=23)
+
 
 ## Current Todo List
 

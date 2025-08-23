@@ -2,7 +2,7 @@
 title: 'Rust Tutorial 2: Rust Ownership'
 date: 2025-08-21 23:22:43
 index_img: /img/cover/rust.jpg
-excerpt: This Blog focuses on the ownership of Rust.
+excerpt: This Blog focuses on the ownership of Rust, including the memory management and ownership law in Rust, with several methods of copying, shallowing and removing. The the blog introduces reference and borrowing laws.
 categories:
   - Code
   - Rust

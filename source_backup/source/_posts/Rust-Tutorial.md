@@ -31,3 +31,7 @@ tags:
 - `2025/08/21`: Finish reviewing the basic concepts of rust, including variables, functions, etc.
 
 - `2025/08/22`: Reviewing the OwnerShip of Rust.
+
+- `2025/08/23`: Learning struct in Rust.
+
+- `2025/08/24`: Learning enums in Rust.

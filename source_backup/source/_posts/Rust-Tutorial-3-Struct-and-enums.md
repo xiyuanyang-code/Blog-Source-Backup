@@ -2,7 +2,7 @@
 title: 'Rust Tutorial 3: Struct and enums'
 date: 2025-08-22 19:40:20
 index_img: /img/cover/rustenum.jpg
-excerpt: This blog covers structs and enums as alternatives to classes, emphasizing Rust's zero-cost abstractions. It details defining and instantiating structs, their ownership and lifetime rules, and implementing methods and traits for debugging and functionality.
+excerpt: This article dives into Rust's structs and enums as class alternatives, defining structs, methods, and derived traits and explaining how enums model exclusive states via matching and control flow.
 categories:
   - Code
   - Rust

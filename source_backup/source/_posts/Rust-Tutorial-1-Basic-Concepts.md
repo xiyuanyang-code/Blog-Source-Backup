@@ -2,7 +2,7 @@
 title: 'Rust Tutorial 1: Basic Concepts'
 date: 2025-08-21 23:20:07
 index_img: /img/cover/rust1.jpg
-excerpt: Basic concepts of Rust programming language, including variables, data types, functions and control expressions.(while, if, loop, etc). Rust is a programming based on expressions. Finally, this blog includes a basic guessing-number game.
+excerpt: Basic concepts of Rust programming language, including variables, data types, functions and control expressions.(while, if, loop, etc). Rust is a programming based on expressions.
 categories:
   - Code
   - Rust

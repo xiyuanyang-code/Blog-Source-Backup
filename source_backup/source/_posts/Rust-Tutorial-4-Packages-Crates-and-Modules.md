@@ -1,5 +1,5 @@
 ---
-title: 'Rust Tutorial 4: Packages, Crates, and Modules'
+title: 'Rust Tutorial 4: Packages, Crates and Modules'
 date: 2025-08-25 00:22:04
 index_img: /img/cover/rust4.jpg
 excerpt: In Rust, packages organize crates, which are the smallest compilation units. Modules within a crate create a hierarchical structure, managing code with visibility and privacy to promote reusability.
@@ -7,6 +7,7 @@ categories:
   - Code
   - Rust
 tags:
+  - Finished
   - tutorial
   - Rust
 ---
@@ -325,7 +326,7 @@ fn main() {
 ```rust
 mod parent {
     mod private_child {
-        pub fn child_function() {}
+        pub fn child_functigon() {}
         fn child_function_private() {}
     }
     

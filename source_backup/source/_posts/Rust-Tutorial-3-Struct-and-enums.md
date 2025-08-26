@@ -7,6 +7,7 @@ categories:
   - Code
   - Rust
 tags:
+  - Finished
   - tutorial
   - Rust
 ---

@@ -220,14 +220,14 @@ Rust所有权机制设计的初衷是**保证内存安全**，但是这样的设
 fn main() {
     // println!("Hello, world!");
     let s1 = String::from("Hello world");
-    let length = cauculate_length(s1);
+    let length = calculate_length(s1);
 
     println!("{}", length);
     println!("{}", s1);
 }
 
 
-fn cauculate_length(s: String) -> usize{
+fn calculate_length(s: String) -> usize{
     s.len()
 }
 ```
@@ -242,14 +242,14 @@ fn cauculate_length(s: String) -> usize{
 fn main() {
     // println!("Hello, world!");
     let s1 = String::from("Hello world");
-    let length = cauculate_length(s1.clone());
+    let length = calculate_length(s1.clone());
 
     println!("{}", length);
     println!("{}", s1);
 }
 
 
-fn cauculate_length(s: String) -> usize{
+fn calculate_length(s: String) -> usize{
     s.len()
 }
 ```
@@ -260,13 +260,13 @@ fn cauculate_length(s: String) -> usize{
 fn main() {
     // println!("Hello, world!");
     let s1 = String::from("Hello world");
-    let (length, s1) = cauculate_length(s1);
+    let (length, s1) = calculate_length(s1);
 
     println!("{}", length);
     println!("{}", s1);
 }
 
-fn cauculate_length(s: String) -> (usize, String){
+fn calculate_length(s: String) -> (usize, String){
     (s.len(), s)
 }
 ```
@@ -281,13 +281,13 @@ Rust还实现了第三种方式，即在函数内部（临时作用域）中进�
 fn main() {
     // println!("Hello, world!");
     let s1 = String::from("Hello world");
-    let length = cauculate_length(&s1);
+    let length = calculate_length(&s1);
 
     println!("{}", length);
     println!("{}", s1);
 }
 
-fn cauculate_length(s: &String) -> usize{
+fn calculate_length(s: &String) -> usize{
     s.len()
 }
 ```
@@ -311,12 +311,12 @@ fn main() {
     // println!("Hello, world!");
     let mut s1 = String::from("Hello world");
     println!("{}", s1);
-    let length = cauculate_length(&mut s1);
+    let length = calculate_length(&mut s1);
     println!("{}", length);
     println!("{}", s1);
 }
 
-fn cauculate_length(s: &mut String) -> usize {
+fn calculate_length(s: &mut String) -> usize {
     s.push_str("I am a boy");
     s.len()
 }
@@ -331,7 +331,7 @@ fn main() {
     // println!("Hello, world!");
     let mut s1 = String::from("Hello world");
     println!("{}", s1);
-    let length = cauculate_length(&mut s1);
+    let length = calculate_length(&mut s1);
     println!("{}", length);
     println!("{}", s1);
 
@@ -345,7 +345,7 @@ fn main() {
 
 }
 
-fn cauculate_length(s: &mut String) -> usize {
+fn calculate_length(s: &mut String) -> usize {
     s.push_str("I am a boy");
     s.len()
 }

@@ -76,9 +76,6 @@ You can find the original paper[^15] here.
 
 [^1]: https://substack.com/home/post/p-153341037
 [^2]: https://substack.com/home/post/p-153692738
-
-### papers related
-
 [^3]: https://arxiv.org/abs/2401.04088
 [^4]: http://arxiv.org/abs/2402.09353
 [^5]: https://arxiv.org/abs/2403.08763

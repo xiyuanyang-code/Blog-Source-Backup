@@ -54,6 +54,8 @@ Initial Learning Status
 
 - `2025/08/28` ~ `2025/08/29`: Learning Generic Types, Traits and Lifetime.
 
+- `2025/08/30`: Building initial project `minigrep` written in Rust
+
 ## Future Plan
 
 {% note primary %}
@@ -63,8 +65,6 @@ Initial Learning Status
 - Project-oriented
 
 {% endnote %}
-
-- An I/O project: Building **minigrep**, a small Rust command line program
 
 - Functional programming: Iterators and Closures
 

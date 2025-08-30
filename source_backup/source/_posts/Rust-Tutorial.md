@@ -26,6 +26,16 @@ tags:
 
 ## Table of Contents
 
+{% note primary %}
+
+Initial Learning Status
+
+- Learning basic concepts in Rust
+
+- Get a deep understanding of Rust's safety and efficiency, learning how to write RUSTY code.
+
+{% endnote %}
+
 - `2025/08/20`: Finish Rust package update & Start learning Chapter 1 & 2.
 
 - `2025/08/21`: Finish reviewing the basic concepts of rust, including variables, functions, etc.
@@ -35,3 +45,33 @@ tags:
 - `2025/08/23`: Learning struct in Rust.
 
 - `2025/08/24`: Learning enums in Rust.
+
+- `2025/08/25`: Learning Packages, crates and modules
+
+- `2025/08/26`: Learning collections
+
+- `2025/08/27`: Learning Exception Handlings
+
+- `2025/08/28` ~ `2025/08/29`: Learning Generic Types, Traits and Lifetime.
+
+## Future Plan
+
+{% note primary %}
+
+- Advanced Features of Rusty
+
+- Project-oriented
+
+{% endnote %}
+
+- An I/O project: Building **minigrep**, a small Rust command line program
+
+- Functional programming: Iterators and Closures
+
+- Smart Pointers
+
+- Concurrency and Asynchronous Programming
+
+- Other advanced features
+
+- Final Project: Building Multi-thread web server.

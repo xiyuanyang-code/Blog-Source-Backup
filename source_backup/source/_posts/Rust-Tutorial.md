@@ -56,17 +56,19 @@ Initial Learning Status
 
 - `2025/08/30`: Building initial project `minigrep` written in Rust
 
+- `2025/08/31`: Functional programming: Iterators and Closures.
+
 ## Future Plan
 
 {% note primary %}
+
+Advanced Rust learning:
 
 - Advanced Features of Rusty
 
 - Project-oriented
 
 {% endnote %}
-
-- Functional programming: Iterators and Closures
 
 - Smart Pointers
 

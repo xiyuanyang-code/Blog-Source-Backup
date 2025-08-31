@@ -8,7 +8,7 @@ categories:
   - Rust
 tags:
   - tutorial
-  - Rust
+  - Rustk
 ---
 
 <style>

@@ -139,7 +139,6 @@ Want to Update your own Blog Post status as well? See [this repo](https://github
 ✅Modern-C
 ✅My-Bloging-Workflow
 ✅My-Memo
-✅My-Multi-Agents
 ✅My-Posts
 ✅My-ToolZoo
 ✅My-WorkFlow

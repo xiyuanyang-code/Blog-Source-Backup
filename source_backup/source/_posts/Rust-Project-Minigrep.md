@@ -78,6 +78,7 @@ This command will search for "rUsT" (and "rust", "Rust", "RUST", etc.) in `poem.
 
 ## Todo List
 
+- feat: add iterator for function programming
 - Add recursive search for folders
 - Add Regex search
 - Add fuzzy search
@@ -92,12 +93,11 @@ Just as a toy implementation... Still needs to be improved.
 
 ```rust
 // main.rs
-use mini_grep::{Config, run};
+\use mini_grep::{Config, run};
 use std::{env, process};
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let config = Config::build(&args).unwrap_or_else(|err| {
+    let config = Config::build(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });
@@ -120,14 +120,16 @@ pub struct Config {
     pub ignore_case: bool,
 }
 impl Config {
-    pub fn build(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 3 {
-            return Err("Error, no enough arguments, should use: \nminigrep pattern file_path");
-        }
-        let query = args[1].clone();
-        let file_path = args[2].clone();
-
-        // feat: add env for case sensitive
+    pub fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
+        args.next();
+        let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a query string"),
+        };
+        let file_path = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a file path"),
+        };
         let ignore_case = env::var("IGNORE_CASE").is_ok();
         Ok(Config {
             query,
@@ -145,7 +147,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     } else {
         search(&config.query, &contents)
     };
-    
+
     for line in results {
         println!("{line}");
     }
@@ -154,25 +156,19 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 // public core function: search for minigrep
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    let mut result: Vec<&str> = Vec::new();
-    for line in contents.lines() {
-        if line.contains(query) {
-            result.push(line);
-        }
-    }
-    result
+    contents
+        .lines()
+        .filter(|line| line.contains(&query))
+        .collect()
 }
 
 // public core function: search while case sensitive
 pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     let query = query.to_lowercase();
-    let mut results = Vec::new();
-    for line in contents.lines() {
-        if line.to_lowercase().contains(&query) {
-            results.push(line);
-        }
-    }
-    results
+    contents
+        .lines()
+        .filter(|line| line.to_lowercase().contains(&query))
+        .collect()
 }
 
 // test module

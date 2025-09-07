@@ -1,7 +1,6 @@
 ---
 title: My-Posts
 date: 2025-02-07 16:04:54
-hide: false
 excerpt: All posts are demonstrated here.
 tags: 
   - Announcement

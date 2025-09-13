@@ -29,10 +29,6 @@ All kinds of stuffs... Mostly for the lab and AI usage.
 
 ## Hugging Face 数据集下载
 
-Upd: `2025/04/25`
-
-由于网络限制，无法使用原生的Hugging Face或者官方提供的`huggface-cli`或者`datasets`等第三方库下载数据集。在此笔者给出可操作的方法之一：
-
 {% note primary %}
 
 **相关网站的集合**：
@@ -188,9 +184,74 @@ Dataset({
 
 很明显，我们成功加载了数据集。
 
-> 但貌似还是很被动...很多数据集测评的库接口都默认要使用Hugging Face，无法避免的问题...
->
-> 希望日后能解决。
+### 更新: 使用官方的 HF CLI DOWNLOAD
+
+{% note primary %}
+
+貌似把网站更新为国内的镜像源就可以正常使用 HF DOWNLOAD 的命令行功能了，并且使用 `load_dataset()` 的官方函数也支持从本地模型路径和数据集路径导入，非常好！
+
+> 并且，个人感觉与其把所有的数据集和模型全部下载到一个固定的下载链接，分散到不同的项目中更方便项目的管理。
+
+{% endnote %}
+
+#### HF CLI
+
+[Official Guide](https://huggingface.co/docs/huggingface_hub/en/guides/cli)
+
+```bash
+hf --help
+```
+
+```
+usage: hf <command> [<args>]
+
+positional arguments:
+  {auth,cache,download,jobs,repo,repo-files,upload,upload-large-folder,env,version,lfs-enable-largefiles,lfs-multipart-upload}
+                        hf command helpers
+    auth                Manage authentication (login, logout, etc.).
+    cache               Manage local cache directory.
+    download            Download files from the Hub
+    jobs                Run and manage Jobs on the Hub.
+    repo                Manage repos on the Hub.
+    repo-files          Manage files in a repo on the Hub.
+    upload              Upload a file or a folder to the Hub. Recommended for single-commit uploads.
+    upload-large-folder
+                        Upload a large folder to the Hub. Recommended for resumable uploads.
+    env                 Print information about the environment.
+    version             Print information about the hf version.
+
+options:
+  -h, --help            show this help message and exit
+```
+
+最常见的使用就是 `hf download` 的功能。
+
+- Download datasets
+
+  ```bash
+  hf download --repo-type dataset --resume-download mrfakename/identity  --local-dir ./data/mrfakename/identity
+  ```
+
+- Download models
+
+  ```bash
+  hf download --resume-download HuggingFaceTB/SmolLM2-135M-Instruct  --local-dir ./models/HuggingFaceTB/SmolLM2-135M-Instruct
+  ```
+
+- Download repository
+
+  ```bash
+  hf download HuggingFaceH4/zephyr-7b-beta --resume_download --local_dir ./models/HuggingFaceH4/zephyr-7b-beta
+  ```
+
+- More
+  - **For more, RTFM**!
+  - Download a single file
+  - Download multiple files
+  - Download spaces
+  - hf login for getting tokens
+  - Specify cache directory
+
 
 ## Markdown 文本内设置超链接
 

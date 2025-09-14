@@ -40,7 +40,6 @@ After entering university, the author realized that the new knowledge to be lear
   - 数据结构: 完成对**Binary Tree**的博客更新和代码复习（到Huffman 树和 Huffman 编码）
 
 - `2025/04/01`:
-  - **不能断更。。。**
   - 大学物理: 角动量守恒定律（但还没有学完）
   - **数据结构**: 完成了树状数组和ST表全部内容的学习: （理论知识复习&博客写作&模版代码+测试&OJ题目练手）
   - **实验室**: 和学长reach out，终于配置好了远程服务器的所有流程（包括之前`scp`链接失效的debug）
@@ -371,6 +370,8 @@ After entering university, the author realized that the new knowledge to be lear
 
 ---
 
+{% fold primary @Semester1.3 %}
+
 - `2025/6/18`:
 	- **CS**: 学习全栈开发，掌握最基本的前端三板斧使用方法
 	- **人工智能**: 挑战杯环境配置
@@ -519,5 +520,70 @@ After entering university, the author realized that the new knowledge to be lear
   - **开发**：优化 AutoEmailSender
   - **CS336**：学习第三课：Hyperparameter & Architecture
   - **Rust**：开始 Rust 学习并复习之前学习的前五章的内容 
+
+
+{% note primary %}
+
+2024-2025 Summer Vacation Summary (or Semester 1.3)
+
+- Time: `2025/06/17` - `2025/09/14`
+- GitHub Actions (including private repos)
+  - `2025/06`:
+    - create 96 commits in 9 repositories
+    - create 4 PRs
+    - create 3 repos
+  - `2025/07`
+    - create 246 commits in 19 repositories
+    - create 39 PRs
+    - create 7 repos
+  - `2025/08`
+    - create 319 commits in 19 repositories
+    - create 40 PRs
+    - create 7 repos
+  - `2025/09`
+    - create 81 commits in 14 repositories
+    - create 1 PR
+    - create 7 repos
+  - total summary:
+    - 742 commits
+    - 84 Open PRs (77 successfully merged)
+    - 24 new repos created
+
+<div style="text-align: center;">
+    <img src="https://ghchart.rshah.org/xiyuanyang-code" alt="Xiyuan Yang's Github Contributions" />
+</div>
+
+- What I have done in Summer?
+  - 系统学习 Web2 的前端技术，JS & HTML & CSS
+  - 编程综合实践：初步体验项目级别的代码工程 & 量化入门
+    - 后续暑期量化项目跟进：择时策略 & 量化垂类预训练模型
+  - 挑战杯 Agent 项目： AppCopilot
+    - 第一次发 Paper！
+  - 实验室 Agent 项目：MCPBench
+    - 第一次体验 Benchmark 类型的工作
+  - 开发项目推进
+    - 大型项目仍在推进中，比较成功的包括 ProbeCode，成功搭建基于 MCP 的智能体框架
+    - 开发了许多 handy 的命令行小项目
+  - 博客更新
+    - 44 篇博客更新
+  - 学习内容：
+    - 复习经典的机器学习和深度学习基本知识
+    - 系统学习 CS224n & CS336
+      - 已经完成 CS224n 的学习
+      - CS336 学习到 MoE 章节
+    - 学习 Rust
+      - 学习 Rust 编程基础知识（看完了经典教材 Rust CookBook 的前 70% 的内容（基础部分））
+      - 完成 Rust 一些 Handy 的小项目
+    - 学习 Pythonic 精进内容
+      - 现在写 Python 犹如砍瓜切菜！
+      - 后续继续学习更复杂的软件工程的**设计模式**的内容
+    - 其他学习
+      - 强化学习 & 信息论 & 概率论
+
+{% endnote %}
+
+{% endfold %}
+
+---
 
 </div>

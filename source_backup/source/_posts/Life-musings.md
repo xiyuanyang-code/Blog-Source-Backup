@@ -281,3 +281,11 @@ The pyramids below are borrowed from [This lecture](https://yixi.tv/#/speech/det
 让思维留痕，并时不时地回头看看，也能在思忖中得到顿悟的 Aha Moment。
 
 突然发现自己踏入编程的殿堂也已经有一年多了，[A year of programming](https://xiyuanyang-code.github.io/posts/One-year-of-Programming/)
+
+## 2025.9.14
+
+新学期开学！
+
+刚刚写完了自己的暑期总结，一个暑假更新了 700 多个 commit...
+
+新学期也要继续努力！

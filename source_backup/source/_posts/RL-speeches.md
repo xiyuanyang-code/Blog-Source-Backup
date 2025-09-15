@@ -6,6 +6,7 @@ math: true
 excerpt: Lecture notes for several sppeches regarding reinforcement learning
 categories:
   - Artificial Intelligence
+  - RL
 tags:
   - reinforcement learning
   - Artificial Intelligence

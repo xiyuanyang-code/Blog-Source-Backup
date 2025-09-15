@@ -586,4 +586,25 @@ After entering university, the author realized that the new knowledge to be lear
 
 ---
 
+
+{% fold primary @Plan for Semester2.1 %}
+
+新学期！
+
+- What I will learn?
+  - 校内课程学习：机器学习、大学物理、数理方法、算法设计与分析（提升算法能力）
+  - 校外课程学习
+    - 大语言模型（接着暑假学习，了解底层原理，为后续打下基础）
+    - 强化学习基础 & 强化学习数学原理
+    - 软件工程：设计模式：如何写出 prettier code？
+      - 在项目的锻炼中体验如何切分并且构建一个项目
+      - 提升对语言高级特性的熟练度
+- 科研
+  - 继续跟进两个科研：
+    - 智能体开发 & Research
+    - 量化金融的智能体开发的科研
+
+{% endfold %}
+
+
 </div>

@@ -2,7 +2,7 @@
 title: More About Post Training
 date: 2025-09-14 11:31:36
 index_img: /img/cover/cs224nposttraining.jpg
-excerpt: "Lecture notes for online courses launched by deeplearningai, focusing on advanced techniques and practices about LLM post-training methodology, from simple SFT training to RLHF, DPO and online reinforcement learning like GRPO."
+excerpt: "Lecture notes for online courses launched by deeplearningai, focusing on advanced online RL training techniques and practices about LLM post-training methodology, including PPO and GRPO."
 math: True
 categories:
   - Artificial Intelligence

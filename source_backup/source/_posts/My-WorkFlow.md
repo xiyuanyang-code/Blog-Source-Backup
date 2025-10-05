@@ -1,7 +1,6 @@
 ---
 title: My-WorkFlow
 date: 2025-02-11 11:30:05
-hide: false
 excerpt: This blog is about some efficiency tools I use daily, which help me build my workflow.
 tags: 
   - Announcement

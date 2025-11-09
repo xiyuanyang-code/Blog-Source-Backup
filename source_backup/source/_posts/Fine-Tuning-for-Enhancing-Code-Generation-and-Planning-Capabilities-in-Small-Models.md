@@ -5,7 +5,7 @@ title: >-
 date: 2025-11-09 14:11:48
 math: True
 excerpt: "Documenting a Hands-On Experiment with LLaMA Factory for Model Fine-Tuning: Leveraging Model Distillation and Data Generation to Enhance Reasoning and Planning Capabilities in Small Models for Code Generation Tasks"
-index_img: /img/cover/fine-tuning-planning.png
+index_img: /img/cover/fine-tuning-planning.jpg
 categories:
   - Artificial Intelligence
   - LLM
